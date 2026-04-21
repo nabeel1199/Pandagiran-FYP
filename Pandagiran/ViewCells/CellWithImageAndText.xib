@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CellWithImageAndText" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="ic_done" translatesAutoresizingMaskIntoConstraints="NO" id="8nN-EH-yye">
+                        <rect key="frame" x="5" y="9" width="24" height="32"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="scr-rl-jjm"/>
+                            <constraint firstAttribute="width" constant="24" id="x8V-Mv-aPR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWG-Kr-eDv">
+                        <rect key="frame" x="34" y="16.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8nN-EH-yye" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="AuU-cC-v8i"/>
+                <constraint firstItem="iWG-Kr-eDv" firstAttribute="leading" secondItem="8nN-EH-yye" secondAttribute="trailing" constant="5" id="Kck-nj-SC7"/>
+                <constraint firstItem="8nN-EH-yye" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="LHH-tO-Wa0"/>
+                <constraint firstItem="iWG-Kr-eDv" firstAttribute="centerY" secondItem="8nN-EH-yye" secondAttribute="centerY" id="ZFN-QQ-GWE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="299" height="50"/>
+            <connections>
+                <outlet property="iv_image" destination="8nN-EH-yye" id="1Sf-gT-Xak"/>
+                <outlet property="label" destination="iWG-Kr-eDv" id="y7M-1T-fwQ"/>
+            </connections>
+            <point key="canvasLocation" x="158.5" y="71"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_done" width="24" height="24"/>
+    </resources>
+</document>

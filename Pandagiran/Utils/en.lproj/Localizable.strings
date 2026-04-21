@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Hysab Kytab
+
+  Created by MacBook Pro on 8/10/18.
+  Copyright © 2018 MacBook Pro. All rights reserved.
+*/
+
+
+"tag_help" : "Under this option you tag places. Example hyperstar for grocery, Khaadi for clothing, Dolmen mall for shopping and ginsoy for eating out."
+"category_help" : "Under this option you can select the most suitable category for your required need. You can add, edit and delete as many categories as you want."
+"account_help" : "Under this option you can pay your amount from cash, bank, or any other account that you want to select."
+"place_help" : "Hysab Kytab will automatically trace nearby places."
+

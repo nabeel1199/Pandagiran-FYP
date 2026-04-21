@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannersViewCell" id="gTV-IL-0wX" customClass="BannersViewCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="260" height="81"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPq-ym-v2y">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="81"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZPq-ym-v2y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DJE-0C-0FY"/>
+                <constraint firstItem="ZPq-ym-v2y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Jme-oS-kMb"/>
+                <constraint firstAttribute="bottom" secondItem="ZPq-ym-v2y" secondAttribute="bottom" id="YMN-Wf-734"/>
+                <constraint firstAttribute="trailing" secondItem="ZPq-ym-v2y" secondAttribute="trailing" id="qB6-wV-iin"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="260" height="81"/>
+            <connections>
+                <outlet property="iv_banner" destination="ZPq-ym-v2y" id="ivv-Ka-BOY"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="86.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

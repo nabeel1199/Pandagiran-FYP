@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlyerViewCell" id="gTV-IL-0wX" customClass="FlyerViewCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="241" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZi-kX-OQV" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="231" height="205"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EWg-7p-wBp">
+                                <rect key="frame" x="0.0" y="0.0" width="231" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="KVb-9r-0If"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9JR-3e-Nxz">
+                                <rect key="frame" x="201" y="0.0" width="30" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_favourite" translatesAutoresizingMaskIntoConstraints="NO" id="XHg-xi-gy1">
+                                        <rect key="frame" x="8.5" y="8.5" width="13" height="13"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="5I2-Wd-obm"/>
+                                    <constraint firstItem="XHg-xi-gy1" firstAttribute="centerX" secondItem="9JR-3e-Nxz" secondAttribute="centerX" id="RVv-bq-hyY"/>
+                                    <constraint firstItem="XHg-xi-gy1" firstAttribute="centerY" secondItem="9JR-3e-Nxz" secondAttribute="centerY" id="oXH-E2-Kds"/>
+                                    <constraint firstAttribute="height" constant="30" id="s0V-gY-bah"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Carrefour Buy More Save More" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Of-HT-JDN">
+                                <rect key="frame" x="8" y="148" width="215" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expires in 3 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3e7-j6-qAt">
+                                <rect key="frame" x="8" y="173" width="215" height="24"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3e7-j6-qAt" secondAttribute="trailing" constant="8" id="20n-zm-xGE"/>
+                            <constraint firstItem="1Of-HT-JDN" firstAttribute="top" secondItem="EWg-7p-wBp" secondAttribute="bottom" constant="8" id="8dv-YH-XaV"/>
+                            <constraint firstItem="EWg-7p-wBp" firstAttribute="leading" secondItem="zZi-kX-OQV" secondAttribute="leading" id="Axu-SX-kiw"/>
+                            <constraint firstAttribute="trailing" secondItem="9JR-3e-Nxz" secondAttribute="trailing" id="ByJ-BN-SJX"/>
+                            <constraint firstAttribute="trailing" secondItem="EWg-7p-wBp" secondAttribute="trailing" id="IZZ-R4-GlF"/>
+                            <constraint firstItem="1Of-HT-JDN" firstAttribute="leading" secondItem="zZi-kX-OQV" secondAttribute="leading" constant="8" id="RQp-5K-rK8"/>
+                            <constraint firstItem="9JR-3e-Nxz" firstAttribute="top" secondItem="zZi-kX-OQV" secondAttribute="top" id="UIj-fA-HHk"/>
+                            <constraint firstItem="3e7-j6-qAt" firstAttribute="leading" secondItem="zZi-kX-OQV" secondAttribute="leading" constant="8" id="XO8-AN-HBc"/>
+                            <constraint firstAttribute="trailing" secondItem="1Of-HT-JDN" secondAttribute="trailing" constant="8" id="ZO0-x1-Z93"/>
+                            <constraint firstItem="EWg-7p-wBp" firstAttribute="top" secondItem="zZi-kX-OQV" secondAttribute="top" id="hsm-3s-elr"/>
+                            <constraint firstAttribute="trailing" secondItem="EWg-7p-wBp" secondAttribute="trailing" id="qOc-Na-EQh"/>
+                            <constraint firstAttribute="bottom" secondItem="3e7-j6-qAt" secondAttribute="bottom" constant="8" id="tG5-jY-X1d"/>
+                            <constraint firstItem="3e7-j6-qAt" firstAttribute="top" secondItem="1Of-HT-JDN" secondAttribute="bottom" constant="8" id="yaD-0g-xz4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zZi-kX-OQV" secondAttribute="trailing" constant="5" id="IVR-PR-fVV"/>
+                <constraint firstItem="zZi-kX-OQV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="JQw-sW-A40"/>
+                <constraint firstItem="zZi-kX-OQV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="bVf-YR-Lye"/>
+                <constraint firstAttribute="bottom" secondItem="zZi-kX-OQV" secondAttribute="bottom" constant="5" id="cVM-vS-R44"/>
+                <constraint firstItem="zZi-kX-OQV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eoh-5T-Va9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="241" height="215"/>
+            <connections>
+                <outlet property="iv_favourite" destination="XHg-xi-gy1" id="UZY-tH-8Nh"/>
+                <outlet property="iv_flyer" destination="EWg-7p-wBp" id="pLU-YZ-BQU"/>
+                <outlet property="label_flyer_expiry" destination="3e7-j6-qAt" id="dX1-Cm-gsO"/>
+                <outlet property="label_flyer_title" destination="1Of-HT-JDN" id="BLL-Q6-rMd"/>
+                <outlet property="view_favourite" destination="9JR-3e-Nxz" id="QIT-WO-MGC"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="230.73463268365819"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_favourite" width="13" height="13"/>
+    </resources>
+</document>

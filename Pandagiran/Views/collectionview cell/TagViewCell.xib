@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagViewCell" id="gTV-IL-0wX" customClass="TagViewCell" customModule="Pandagiran" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="212" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="212" height="57"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVn-Ul-DE6" customClass="CardView" customModule="Pandagiran" customModuleProvider="target">
+                        <rect key="frame" x="5" y="8.5" width="202" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add_circle" translatesAutoresizingMaskIntoConstraints="NO" id="fcF-ny-har" customClass="TintedImageView" customModule="Pandagiran" customModuleProvider="target">
+                                <rect key="frame" x="170" y="8" width="24" height="24"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="sndkjnasdjkndan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0x3-BU-S2H">
+                                <rect key="frame" x="8" y="13" width="157" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fcF-ny-har" firstAttribute="top" secondItem="GVn-Ul-DE6" secondAttribute="top" constant="8" id="0xo-Xe-L3S"/>
+                            <constraint firstAttribute="trailing" secondItem="fcF-ny-har" secondAttribute="trailing" constant="8" id="1CB-Va-6Pd"/>
+                            <constraint firstItem="fcF-ny-har" firstAttribute="leading" secondItem="0x3-BU-S2H" secondAttribute="trailing" constant="5" id="VrW-g9-lI6"/>
+                            <constraint firstAttribute="bottom" secondItem="fcF-ny-har" secondAttribute="bottom" constant="8" id="bgz-nZ-ldp"/>
+                            <constraint firstItem="0x3-BU-S2H" firstAttribute="centerY" secondItem="fcF-ny-har" secondAttribute="centerY" id="yWD-qg-Ccd"/>
+                            <constraint firstItem="0x3-BU-S2H" firstAttribute="leading" secondItem="GVn-Ul-DE6" secondAttribute="leading" constant="8" id="zuO-6f-27K"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GVn-Ul-DE6" secondAttribute="trailing" constant="5" id="8zO-oH-m3g"/>
+                <constraint firstItem="GVn-Ul-DE6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="hkL-1X-Htp"/>
+                <constraint firstItem="GVn-Ul-DE6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="icG-RS-keg"/>
+                <constraint firstItem="GVn-Ul-DE6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="oee-xv-SNJ"/>
+            </constraints>
+            <size key="customSize" width="212" height="57"/>
+            <connections>
+                <outlet property="iv_add" destination="fcF-ny-har" id="hOS-SW-dta"/>
+                <outlet property="label_tag" destination="0x3-BU-S2H" id="nGw-Pf-NWA"/>
+            </connections>
+            <point key="canvasLocation" x="115.2" y="156.97151424287858"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="fcF-ny-har">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_add_circle" width="24" height="24"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

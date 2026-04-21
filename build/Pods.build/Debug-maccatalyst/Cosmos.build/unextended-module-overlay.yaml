@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/leeban/Downloads/Pandagiran/build/Debug-maccatalyst/Cosmos/Cosmos.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/leeban/Downloads/Pandagiran/build/Pods.build/Debug-maccatalyst/Cosmos.build/unextended-module.modulemap",
+    }]
+  }]
+}

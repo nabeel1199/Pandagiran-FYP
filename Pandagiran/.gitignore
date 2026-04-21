@@ -1,0 +1,28 @@
+# Xcode
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+
+# SwiftPM
+.build/
+
+# CocoaPods
+Pods/
+
+# Firebase
+GoogleService-Info.plist
+
+# macOS
+.DS_Store
+
+# ENV
+.env.local
+
+# Firebase secrets
+serviceAccountKey.json
+firebase-adminsdk-*.json
+
+# Ignore ALL json EXCEPT these
+*.json
+!package.json
+!package-lock.json

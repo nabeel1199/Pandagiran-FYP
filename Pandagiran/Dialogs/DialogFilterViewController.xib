@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogFilterViewController" customModule="Hysab_Kytab" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_account" destination="eVs-84-T3h" id="aft-X1-a6r"/>
+                <outlet property="btn_category" destination="Vxz-F9-tpU" id="JRp-g6-7yp"/>
+                <outlet property="btn_type" destination="MNw-1U-tZk" id="1if-zV-ldt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHE-SU-rvW" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                    <rect key="frame" x="30" y="133" width="315" height="400"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-AY-RDC">
+                            <rect key="frame" x="246" y="360" width="49" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="APPLY">
+                                <color key="titleColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onFilterApplied:" destination="-1" eventType="touchUpInside" id="ino-xq-T89"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apply filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhw-cv-OxK">
+                            <rect key="frame" x="10" y="10" width="88" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pZ-wi-rKx">
+                            <rect key="frame" x="169" y="360" width="62" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onCancelTapped:" destination="-1" eventType="touchUpInside" id="6qz-cY-ZKJ"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_filter" translatesAutoresizingMaskIntoConstraints="NO" id="pMV-bb-fU5" customClass="TintedImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                            <rect key="frame" x="10" y="66" width="45" height="45"/>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45" id="hRC-AI-2FR"/>
+                                <constraint firstAttribute="height" constant="45" id="hf5-Jo-Tui"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_account" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-rs-MOb" customClass="TintedImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                            <rect key="frame" x="10" y="146" width="45" height="45"/>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="09S-vK-DdA"/>
+                                <constraint firstAttribute="width" constant="45" id="CPr-dV-wvw"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNw-1U-tZk">
+                            <rect key="frame" x="63" y="76" width="110" height="24"/>
+                            <state key="normal" title="-All types-" image="ic_drop_down">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="onFilterTypeTapped:" destination="-1" eventType="touchUpInside" id="fu3-zl-CMJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVs-84-T3h">
+                            <rect key="frame" x="63" y="156.5" width="139" height="24"/>
+                            <state key="normal" title="-All accounts-" image="ic_drop_down">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onAccountTapped:" destination="-1" eventType="touchUpInside" id="bV5-jo-fBF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxz-F9-tpU">
+                            <rect key="frame" x="63" y="236.5" width="150" height="24"/>
+                            <state key="normal" title="-All categories-" image="ic_drop_down">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="omCategoryTapped:" destination="-1" eventType="touchUpInside" id="7e1-Z2-lda"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_description" translatesAutoresizingMaskIntoConstraints="NO" id="xQR-RI-GIx" customClass="TintedImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                            <rect key="frame" x="10" y="226" width="45" height="45"/>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="KCf-hu-kiu"/>
+                                <constraint firstAttribute="width" constant="45" id="lf1-PG-N3E"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="jQk-rs-MOb" firstAttribute="leading" secondItem="zHE-SU-rvW" secondAttribute="leading" constant="10" id="4Cm-4h-kPG"/>
+                        <constraint firstAttribute="trailing" secondItem="g7Y-AY-RDC" secondAttribute="trailing" constant="20" id="DGT-hh-r3C"/>
+                        <constraint firstItem="eVs-84-T3h" firstAttribute="centerY" secondItem="jQk-rs-MOb" secondAttribute="centerY" id="GT8-Ig-1L3"/>
+                        <constraint firstItem="Vxz-F9-tpU" firstAttribute="leading" secondItem="xQR-RI-GIx" secondAttribute="trailing" constant="8" id="LvH-nD-au6"/>
+                        <constraint firstItem="pMV-bb-fU5" firstAttribute="leading" secondItem="zHE-SU-rvW" secondAttribute="leading" constant="10" id="POD-ym-dWu"/>
+                        <constraint firstAttribute="height" constant="400" id="RNA-hq-PZv"/>
+                        <constraint firstItem="MNw-1U-tZk" firstAttribute="centerY" secondItem="pMV-bb-fU5" secondAttribute="centerY" id="SuN-iy-SoH"/>
+                        <constraint firstItem="jQk-rs-MOb" firstAttribute="top" secondItem="pMV-bb-fU5" secondAttribute="bottom" constant="35" id="VGI-kl-3PB"/>
+                        <constraint firstItem="Vxz-F9-tpU" firstAttribute="centerY" secondItem="xQR-RI-GIx" secondAttribute="centerY" id="VcA-3L-pAg"/>
+                        <constraint firstAttribute="width" constant="315" id="XHZ-tu-NqW"/>
+                        <constraint firstItem="MNw-1U-tZk" firstAttribute="leading" secondItem="pMV-bb-fU5" secondAttribute="trailing" constant="8" id="akn-G8-Unj"/>
+                        <constraint firstAttribute="bottom" secondItem="g7Y-AY-RDC" secondAttribute="bottom" constant="10" id="bgL-cN-bRY"/>
+                        <constraint firstItem="g7Y-AY-RDC" firstAttribute="leading" secondItem="0pZ-wi-rKx" secondAttribute="trailing" constant="15" id="dup-bn-tEl"/>
+                        <constraint firstItem="pMV-bb-fU5" firstAttribute="top" secondItem="dhw-cv-OxK" secondAttribute="bottom" constant="35" id="eIk-o6-5mt"/>
+                        <constraint firstItem="xQR-RI-GIx" firstAttribute="leading" secondItem="zHE-SU-rvW" secondAttribute="leading" constant="10" id="g8i-pt-ook"/>
+                        <constraint firstItem="eVs-84-T3h" firstAttribute="leading" secondItem="jQk-rs-MOb" secondAttribute="trailing" constant="8" id="gej-Mp-gxU"/>
+                        <constraint firstItem="dhw-cv-OxK" firstAttribute="top" secondItem="zHE-SU-rvW" secondAttribute="top" constant="10" id="n0j-5K-Cs9"/>
+                        <constraint firstItem="xQR-RI-GIx" firstAttribute="top" secondItem="jQk-rs-MOb" secondAttribute="bottom" constant="35" id="nME-gp-yQh"/>
+                        <constraint firstItem="dhw-cv-OxK" firstAttribute="leading" secondItem="zHE-SU-rvW" secondAttribute="leading" constant="10" id="nlH-wf-itE"/>
+                        <constraint firstAttribute="bottom" secondItem="0pZ-wi-rKx" secondAttribute="bottom" constant="10" id="uO3-1Z-RUb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zHE-SU-rvW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Kv-jV-Yh4"/>
+                <constraint firstItem="zHE-SU-rvW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iYC-4r-O0U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="84.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_account" width="24" height="24"/>
+        <image name="ic_description" width="24" height="24"/>
+        <image name="ic_drop_down" width="24" height="24"/>
+        <image name="ic_filter" width="24" height="24"/>
+    </resources>
+</document>

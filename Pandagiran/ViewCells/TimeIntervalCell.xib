@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeIntervalCell" rowHeight="62" id="KGk-i7-Jjw" customClass="TimeIntervalCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVY-dd-vIm">
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="61.5"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="ic_radio_unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="iMH-IS-oui">
+                                <rect key="frame" x="8" y="16" width="36" height="29.5"/>
+                                <color key="tintColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y03-DY-TgP">
+                                <rect key="frame" x="60" y="22.5" width="303" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="ic_forward_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="S3P-Fk-9nh">
+                                <rect key="frame" x="371" y="7" width="48" height="48"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8A-HN-JXW">
+                                <rect key="frame" x="1" y="60.5" width="425" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="XkO-4M-yxd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S3P-Fk-9nh" firstAttribute="leading" secondItem="y03-DY-TgP" secondAttribute="trailing" constant="8" id="75T-M7-m8H"/>
+                            <constraint firstItem="S3P-Fk-9nh" firstAttribute="centerY" secondItem="iMH-IS-oui" secondAttribute="centerY" id="Ao0-Ww-HxW"/>
+                            <constraint firstItem="t8A-HN-JXW" firstAttribute="leading" secondItem="IVY-dd-vIm" secondAttribute="leading" constant="1" id="Fk2-91-BpR"/>
+                            <constraint firstItem="iMH-IS-oui" firstAttribute="leading" secondItem="IVY-dd-vIm" secondAttribute="leading" constant="8" id="MhY-d1-Mtd"/>
+                            <constraint firstItem="y03-DY-TgP" firstAttribute="centerY" secondItem="iMH-IS-oui" secondAttribute="centerY" id="UCm-m5-B6q"/>
+                            <constraint firstItem="iMH-IS-oui" firstAttribute="top" secondItem="IVY-dd-vIm" secondAttribute="top" constant="16" id="afI-da-gUE"/>
+                            <constraint firstAttribute="trailing" secondItem="S3P-Fk-9nh" secondAttribute="trailing" constant="8" id="iBB-go-lFY"/>
+                            <constraint firstAttribute="trailing" secondItem="t8A-HN-JXW" secondAttribute="trailing" constant="1" id="ixT-jL-k9g"/>
+                            <constraint firstAttribute="bottom" secondItem="t8A-HN-JXW" secondAttribute="bottom" id="mV0-vj-lvP"/>
+                            <constraint firstAttribute="bottom" secondItem="iMH-IS-oui" secondAttribute="bottom" constant="16" id="mWO-PQ-DWt"/>
+                            <constraint firstItem="y03-DY-TgP" firstAttribute="leading" secondItem="iMH-IS-oui" secondAttribute="trailing" constant="16" id="nu8-oK-2TS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IVY-dd-vIm" secondAttribute="bottom" id="0ma-Lk-iVo"/>
+                    <constraint firstItem="IVY-dd-vIm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9zE-F4-zhn"/>
+                    <constraint firstItem="IVY-dd-vIm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OH6-uI-K66"/>
+                    <constraint firstAttribute="trailing" secondItem="IVY-dd-vIm" secondAttribute="trailing" id="xKR-rs-REA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iv_checked" destination="iMH-IS-oui" id="Yxl-gd-aFa"/>
+                <outlet property="label_interval" destination="y03-DY-TgP" id="zCg-ai-A2M"/>
+            </connections>
+            <point key="canvasLocation" x="119.2" y="62.968515742128943"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_forward_arrow" width="48" height="48"/>
+        <image name="ic_radio_unchecked" width="36" height="36"/>
+    </resources>
+</document>

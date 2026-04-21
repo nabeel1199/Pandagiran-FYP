@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryBreakdownViewCell" id="gTV-IL-0wX" customClass="CategoryBreakdownViewCell" customModule="Pandagiran" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="382" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B62-9o-iUj" customClass="CardView" customModule="Pandagiran" customModuleProvider="target">
+                        <rect key="frame" x="5" y="8" width="372" height="149"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total budget spent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-yO-o6h">
+                                <rect key="frame" x="16" y="60" width="153" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Rs 10,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-D0-a4l">
+                                <rect key="frame" x="16" y="95.5" width="71.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/Rs 15,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVg-5o-oxQ">
+                                <rect key="frame" x="87.5" y="97" width="68.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs 5,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37x-FT-UPQ">
+                                <rect key="frame" x="302" y="97" width="54" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0R-Nv-5pX">
+                                <rect key="frame" x="274.5" y="97" width="27.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELN-RJ-e25">
+                                <rect key="frame" x="340" y="16" width="24" height="24"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="ic_menu"/>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2SN-Qm-uXK">
+                                <rect key="frame" x="16" y="125" width="340" height="8"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="sSA-dC-tQF"/>
+                                </constraints>
+                                <color key="trackTintColor" systemColor="groupTableViewBackgroundColor"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="bt_2" translatesAutoresizingMaskIntoConstraints="NO" id="5mN-Uq-TH2" customClass="CircularImageView" customModule="Pandagiran" customModuleProvider="target">
+                                <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Personal budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahz-Fy-vTX">
+                                <rect key="frame" x="56" y="19.5" width="279" height="17"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="t2I-yO-o6h" firstAttribute="leading" secondItem="B62-9o-iUj" secondAttribute="leading" constant="16" id="2Jk-dC-oAb"/>
+                            <constraint firstItem="37x-FT-UPQ" firstAttribute="leading" secondItem="x0R-Nv-5pX" secondAttribute="trailing" id="4Sb-4V-gk4"/>
+                            <constraint firstItem="8ZO-D0-a4l" firstAttribute="top" secondItem="t2I-yO-o6h" secondAttribute="bottom" constant="8" id="6Lz-6g-FKc"/>
+                            <constraint firstItem="5mN-Uq-TH2" firstAttribute="top" secondItem="B62-9o-iUj" secondAttribute="top" constant="16" id="7Tg-Ie-xzn"/>
+                            <constraint firstAttribute="trailing" secondItem="37x-FT-UPQ" secondAttribute="trailing" constant="16" id="8do-nh-yge"/>
+                            <constraint firstItem="ahz-Fy-vTX" firstAttribute="centerY" secondItem="5mN-Uq-TH2" secondAttribute="centerY" id="Bt7-KL-6Vl"/>
+                            <constraint firstItem="5mN-Uq-TH2" firstAttribute="leading" secondItem="B62-9o-iUj" secondAttribute="leading" constant="16" id="DKK-EV-EvM"/>
+                            <constraint firstItem="ahz-Fy-vTX" firstAttribute="leading" secondItem="5mN-Uq-TH2" secondAttribute="trailing" constant="16" id="DtR-8Z-Tce"/>
+                            <constraint firstItem="IVg-5o-oxQ" firstAttribute="centerY" secondItem="8ZO-D0-a4l" secondAttribute="centerY" id="Eqk-vW-SjK"/>
+                            <constraint firstAttribute="bottom" secondItem="2SN-Qm-uXK" secondAttribute="bottom" constant="16" id="FL1-1r-dD4"/>
+                            <constraint firstItem="37x-FT-UPQ" firstAttribute="centerY" secondItem="IVg-5o-oxQ" secondAttribute="centerY" id="Ka1-NE-gzd"/>
+                            <constraint firstItem="2SN-Qm-uXK" firstAttribute="top" secondItem="8ZO-D0-a4l" secondAttribute="bottom" constant="10" id="NGn-uR-g4u"/>
+                            <constraint firstItem="ELN-RJ-e25" firstAttribute="leading" secondItem="ahz-Fy-vTX" secondAttribute="trailing" constant="5" id="WOo-Lm-ta2"/>
+                            <constraint firstItem="x0R-Nv-5pX" firstAttribute="centerY" secondItem="37x-FT-UPQ" secondAttribute="centerY" id="ZrB-wR-eOq"/>
+                            <constraint firstItem="IVg-5o-oxQ" firstAttribute="leading" secondItem="8ZO-D0-a4l" secondAttribute="trailing" id="eBo-2O-am2"/>
+                            <constraint firstItem="ELN-RJ-e25" firstAttribute="centerY" secondItem="ahz-Fy-vTX" secondAttribute="centerY" id="egE-4i-rIP"/>
+                            <constraint firstItem="t2I-yO-o6h" firstAttribute="top" secondItem="5mN-Uq-TH2" secondAttribute="bottom" constant="20" id="fXF-It-ywc"/>
+                            <constraint firstItem="8ZO-D0-a4l" firstAttribute="leading" secondItem="B62-9o-iUj" secondAttribute="leading" constant="16" id="hgb-oG-LEA"/>
+                            <constraint firstAttribute="trailing" secondItem="2SN-Qm-uXK" secondAttribute="trailing" constant="16" id="mez-zd-97Q"/>
+                            <constraint firstAttribute="trailing" secondItem="ELN-RJ-e25" secondAttribute="trailing" constant="8" id="rfT-RM-KEG"/>
+                            <constraint firstItem="2SN-Qm-uXK" firstAttribute="leading" secondItem="B62-9o-iUj" secondAttribute="leading" constant="16" id="w3l-vV-KgW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="B62-9o-iUj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="68E-Vh-17y"/>
+                <constraint firstItem="B62-9o-iUj" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HWQ-57-Mlp"/>
+                <constraint firstItem="B62-9o-iUj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="TVo-Qp-jCM"/>
+                <constraint firstAttribute="bottom" secondItem="B62-9o-iUj" secondAttribute="bottom" constant="8" id="alf-jo-NpE"/>
+                <constraint firstAttribute="trailing" secondItem="B62-9o-iUj" secondAttribute="trailing" constant="5" id="qcy-Ry-efJ"/>
+            </constraints>
+            <size key="customSize" width="382" height="165"/>
+            <connections>
+                <outlet property="btn_menu" destination="ELN-RJ-e25" id="gAy-Xs-Sof"/>
+                <outlet property="iv_category" destination="5mN-Uq-TH2" id="2I2-C3-SaW"/>
+                <outlet property="label_category" destination="ahz-Fy-vTX" id="ZDk-hI-MYt"/>
+                <outlet property="label_left" destination="x0R-Nv-5pX" id="Bc0-mh-wej"/>
+                <outlet property="label_left_amount" destination="37x-FT-UPQ" id="GI7-qy-yfL"/>
+                <outlet property="label_spent_amount" destination="8ZO-D0-a4l" id="JwA-jg-IJ9"/>
+                <outlet property="label_total_amount" destination="IVg-5o-oxQ" id="7iL-wq-9lL"/>
+                <outlet property="label_total_budget_spent" destination="t2I-yO-o6h" id="f16-gy-UmD"/>
+                <outlet property="progress_view" destination="2SN-Qm-uXK" id="Of9-68-hfL"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="205.54722638680661"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="5mN-Uq-TH2">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bt_2" width="24" height="24"/>
+        <image name="ic_menu" width="24" height="24"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

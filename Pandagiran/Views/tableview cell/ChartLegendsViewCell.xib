@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="ChartLegendsViewCell" customModule="Pandagiran" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dot" translatesAutoresizingMaskIntoConstraints="NO" id="FxJ-Zl-Iqa" customClass="TintedImageView" customModule="Pandagiran" customModuleProvider="target">
+                        <rect key="frame" x="21" y="26.5" width="8" height="8"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="L7R-2c-PMM"/>
+                            <constraint firstAttribute="width" constant="8" id="hQt-Rc-cKI"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="snE-8g-1fj">
+                        <rect key="frame" x="34" y="23.5" width="287" height="14.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyc-we-ijv">
+                                <rect key="frame" x="0.0" y="0.0" width="287" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MYR 19,000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-ol-zLN">
+                                <rect key="frame" x="0.0" y="14.5" width="287" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="snE-8g-1fj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="P4k-Tw-fdF"/>
+                    <constraint firstItem="FxJ-Zl-Iqa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bQX-ka-4tv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="snE-8g-1fj" secondAttribute="trailing" constant="8" id="gbc-8B-rIg"/>
+                    <constraint firstItem="FxJ-Zl-Iqa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="rry-Wj-38L"/>
+                    <constraint firstItem="snE-8g-1fj" firstAttribute="leading" secondItem="FxJ-Zl-Iqa" secondAttribute="trailing" constant="5" id="vvZ-FE-dDD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iv_legend" destination="FxJ-Zl-Iqa" id="db7-Hq-tCr"/>
+                <outlet property="label_spent" destination="gBL-ol-zLN" id="G60-UN-uwa"/>
+                <outlet property="legend_title" destination="Xyc-we-ijv" id="sWV-7h-34m"/>
+            </connections>
+            <point key="canvasLocation" x="157.59999999999999" y="118.29085457271366"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="FxJ-Zl-Iqa">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_dot" width="24" height="24"/>
+    </resources>
+</document>

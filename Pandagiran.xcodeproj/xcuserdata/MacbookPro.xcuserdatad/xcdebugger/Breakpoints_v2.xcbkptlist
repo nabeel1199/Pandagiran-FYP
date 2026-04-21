@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8C3342D5-71ED-4EF2-B176-2EF0B9C32436"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "807D8921-AF86-4FBF-9829-E5CE20294A08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hysab Kytab/ViewCells/ActivityViewCell.swift"
+            timestampString = "544445407.714831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ActivityViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "807D8921-AF86-4FBF-9829-E5CE20294A08 - 96617b8fcc7cd76d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hysab_Kytab.ActivityViewCell.tv_category.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/ViewCells/ActivityViewCell.swift"
+                  timestampString = "536580416.43995"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "807D8921-AF86-4FBF-9829-E5CE20294A08 - 1ee233d1a7ef8311"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hysab_Kytab.ActivityViewCell.tv_category.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UILabel&gt;"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/ViewCells/ActivityViewCell.swift"
+                  timestampString = "536580416.441423"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "807D8921-AF86-4FBF-9829-E5CE20294A08 - 228f1fa94adf7188"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hysab_Kytab.ActivityViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; Hysab_Kytab.ActivityViewCell"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/ViewCells/ActivityViewCell.swift"
+                  timestampString = "536580416.442646"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "349">
+               </Location>
+               <Location
+                  uuid = "807D8921-AF86-4FBF-9829-E5CE20294A08 - 344d47b1ac3657c1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hysab_Kytab.ActivityViewCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Hysab_Kytab.ActivityViewCell&gt;"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/ViewCells/ActivityViewCell.swift"
+                  timestampString = "536580416.443856"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD517DD6-AA32-4057-902E-77EF1C621B53"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hysab Kytab/Controllers/BudgetDetailViewController.swift"
+            timestampString = "586272590.989975"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "BudgetDetailViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47EDF133-09DE-49CF-972F-8F45FD05705A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hysab Kytab/Utils/ActivitiesDbUtils.swift"
+            timestampString = "597232673.144583"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchVouchers(accountId:categoryId:type:currentInterval:month:year:offset:limit:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A274D60-313D-4A5D-9573-33BA71FE9A67"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hysab Kytab/Utils/Constants.swift"
+            timestampString = "578313216.764829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "Constants"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2A274D60-313D-4A5D-9573-33BA71FE9A67 - 5f893b13c9b8e03f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_168CB81B5108F1445384AFFB0D768F82_func5"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/Utils/Constants.swift"
+                  timestampString = "537428550.129691"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "2A274D60-313D-4A5D-9573-33BA71FE9A67 - 4df1f801bd347b94"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hysab_Kytab.Constants.HKB_VOUCHER.unsafeMutableAddressor : Swift.String"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/Utils/Constants.swift"
+                  timestampString = "537428550.131169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "2A274D60-313D-4A5D-9573-33BA71FE9A67 - def5c7691f42805f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Hysab_Kytab.Constants.HKB_VOUCHER.getter : Swift.String"
+                  moduleName = "Hysab Kytab"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MacbookPro/Desktop/Hysab%20Kytab/Hysab%20Kytab/Utils/Constants.swift"
+                  timestampString = "537428550.132388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

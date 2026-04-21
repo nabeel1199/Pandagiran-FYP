@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeSelectionPopup" customModule="Pandagiran" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_cancel" destination="cG6-Rk-CjI" id="jZF-Wg-8tS"/>
+                <outlet property="btn_ok" destination="h89-Ok-HnM" id="7Nu-Uu-zTm"/>
+                <outlet property="label_select_time" destination="zMB-Wj-Uka" id="Ac1-VZ-RwF"/>
+                <outlet property="popup_view" destination="jeF-Ou-Jqt" id="aLd-LG-lu1"/>
+                <outlet property="time_picker" destination="izC-dE-URE" id="PVh-42-n0U"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeF-Ou-Jqt" customClass="CardView" customModule="Pandagiran" customModuleProvider="target">
+                    <rect key="frame" x="40" y="183.5" width="295" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMB-Wj-Uka">
+                            <rect key="frame" x="8" y="8" width="279" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="izC-dE-URE">
+                            <rect key="frame" x="8" y="35.5" width="279" height="218.5"/>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cG6-Rk-CjI">
+                            <rect key="frame" x="187" y="262" width="62" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="CANCEL">
+                                <color key="titleColor" systemColor="tintColor"/>
+                            </state>
+                            <connections>
+                                <action selector="onCancelTapped:" destination="-1" eventType="touchUpInside" id="ezp-1G-tNV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h89-Ok-HnM">
+                            <rect key="frame" x="257" y="262" width="30" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" systemColor="tintColor"/>
+                            </state>
+                            <connections>
+                                <action selector="onOkTapped:" destination="-1" eventType="touchUpInside" id="NWG-TP-nnO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="cG6-Rk-CjI" firstAttribute="top" secondItem="izC-dE-URE" secondAttribute="bottom" constant="8" id="1Oh-5n-uoJ"/>
+                        <constraint firstAttribute="trailing" secondItem="izC-dE-URE" secondAttribute="trailing" constant="8" id="9cL-N7-a0z"/>
+                        <constraint firstAttribute="trailing" secondItem="zMB-Wj-Uka" secondAttribute="trailing" constant="8" id="LXC-y4-UIH"/>
+                        <constraint firstAttribute="bottom" secondItem="h89-Ok-HnM" secondAttribute="bottom" constant="8" id="LsI-wm-fqK"/>
+                        <constraint firstItem="izC-dE-URE" firstAttribute="leading" secondItem="jeF-Ou-Jqt" secondAttribute="leading" constant="8" id="NmZ-a0-WUj"/>
+                        <constraint firstAttribute="height" constant="300" id="NqD-tP-0bI"/>
+                        <constraint firstAttribute="bottom" secondItem="cG6-Rk-CjI" secondAttribute="bottom" constant="8" id="Se5-b4-8El"/>
+                        <constraint firstItem="izC-dE-URE" firstAttribute="top" secondItem="zMB-Wj-Uka" secondAttribute="bottom" constant="8" id="XSM-gP-1Uf"/>
+                        <constraint firstItem="h89-Ok-HnM" firstAttribute="top" secondItem="izC-dE-URE" secondAttribute="bottom" constant="8" id="XUD-H6-Fr0"/>
+                        <constraint firstItem="h89-Ok-HnM" firstAttribute="leading" secondItem="cG6-Rk-CjI" secondAttribute="trailing" constant="8" id="ai4-NR-e6S"/>
+                        <constraint firstItem="zMB-Wj-Uka" firstAttribute="leading" secondItem="jeF-Ou-Jqt" secondAttribute="leading" constant="8" id="gzx-Wd-Q7o"/>
+                        <constraint firstAttribute="trailing" secondItem="h89-Ok-HnM" secondAttribute="trailing" constant="8" id="mtE-cI-YHM"/>
+                        <constraint firstItem="zMB-Wj-Uka" firstAttribute="top" secondItem="jeF-Ou-Jqt" secondAttribute="top" constant="8" id="tFP-XU-YVY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jeF-Ou-Jqt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="2OD-wv-o1e"/>
+                <constraint firstItem="jeF-Ou-Jqt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="btS-hJ-6Mm"/>
+                <constraint firstAttribute="trailing" secondItem="jeF-Ou-Jqt" secondAttribute="trailing" constant="40" id="lEP-rB-We2"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

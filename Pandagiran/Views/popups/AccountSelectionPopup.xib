@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountSelectionPopup" customModule="Hysab_Kytab" customModuleProvider="target">
+            <connections>
+                <outlet property="accountsTableHeight" destination="RIP-tc-R6p" id="dgL-Gm-abM"/>
+                <outlet property="label_choose_account" destination="EBI-d0-9GZ" id="L6W-FO-Yci"/>
+                <outlet property="table_view_accounts" destination="Ufc-gx-TCU" id="QQH-mp-svh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-Jc-y45" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                    <rect key="frame" x="40" y="173.5" width="295" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBI-d0-9GZ" customClass="CustomFontLabel" customModule="Hysab_Kytab" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="133.5" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2P2-44-7OJ">
+                            <rect key="frame" x="263" y="14" width="24" height="24"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="ic_clear"/>
+                            <connections>
+                                <action selector="onCloseTapped:" destination="-1" eventType="touchUpInside" id="08m-3v-VJM"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ufc-gx-TCU">
+                            <rect key="frame" x="0.0" y="54" width="295" height="250"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="250" id="RIP-tc-R6p"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Ufc-gx-TCU" secondAttribute="bottom" constant="16" id="3Rw-VM-NJG"/>
+                        <constraint firstAttribute="trailing" secondItem="Ufc-gx-TCU" secondAttribute="trailing" id="6wF-0r-cmu"/>
+                        <constraint firstItem="EBI-d0-9GZ" firstAttribute="leading" secondItem="yIT-Jc-y45" secondAttribute="leading" constant="16" id="HmE-GH-J9C"/>
+                        <constraint firstItem="EBI-d0-9GZ" firstAttribute="top" secondItem="yIT-Jc-y45" secondAttribute="top" constant="16" id="Pkp-4A-HBC"/>
+                        <constraint firstItem="Ufc-gx-TCU" firstAttribute="leading" secondItem="yIT-Jc-y45" secondAttribute="leading" id="jFL-WR-fc7"/>
+                        <constraint firstItem="2P2-44-7OJ" firstAttribute="centerY" secondItem="EBI-d0-9GZ" secondAttribute="centerY" id="mwK-BQ-4cE"/>
+                        <constraint firstAttribute="trailing" secondItem="2P2-44-7OJ" secondAttribute="trailing" constant="8" id="tKM-ce-XFb"/>
+                        <constraint firstItem="Ufc-gx-TCU" firstAttribute="top" secondItem="2P2-44-7OJ" secondAttribute="bottom" constant="16" id="uNC-6i-9oQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yIT-Jc-y45" secondAttribute="trailing" constant="40" id="1qW-PU-oeU"/>
+                <constraint firstItem="yIT-Jc-y45" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="VRR-LF-D6s"/>
+                <constraint firstItem="yIT-Jc-y45" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dJE-qi-crZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_clear" width="24" height="24"/>
+    </resources>
+</document>

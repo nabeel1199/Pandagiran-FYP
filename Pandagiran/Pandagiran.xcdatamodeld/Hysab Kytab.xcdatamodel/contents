@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="Version1">
+    <entity name="Hkb_account" representedClassName=".Hkb_account" syncable="YES">
+        <attribute name="accnature" optional="YES" attributeType="String"/>
+        <attribute name="account_currency" optional="YES" attributeType="String"/>
+        <attribute name="account_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="acctype" optional="YES" attributeType="String"/>
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="balance_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bank_name" optional="YES" attributeType="String"/>
+        <attribute name="boxcolor" optional="YES" attributeType="String"/>
+        <attribute name="boxicon" optional="YES" attributeType="String"/>
+        <attribute name="descr" optional="YES" attributeType="String"/>
+        <attribute name="flex1" optional="YES" attributeType="String"/>
+        <attribute name="flex2" optional="YES" attributeType="String"/>
+        <attribute name="glaccno" optional="YES" attributeType="String"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="openingbalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pin" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Hkb_activity" representedClassName=".Hkb_activity" syncable="YES">
+        <attribute name="activitydatetime" optional="YES" attributeType="String"/>
+        <attribute name="apilevel" optional="YES" attributeType="String"/>
+        <attribute name="appversion" optional="YES" attributeType="String"/>
+        <attribute name="branchid" optional="YES" attributeType="String"/>
+        <attribute name="devicemodel" optional="YES" attributeType="String"/>
+        <attribute name="devicename" optional="YES" attributeType="String"/>
+        <attribute name="deviceversion" optional="YES" attributeType="String"/>
+        <attribute name="hkappcodeversion" optional="YES" attributeType="String"/>
+        <attribute name="iosversion" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Hkb_budget" representedClassName=".Hkb_budget" syncable="YES">
+        <attribute name="budget_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="budgetmonth" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="budgetvalue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="budgetyear" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="categoryid" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Hkb_category" representedClassName=".Hkb_category" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="balance_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="box_color" optional="YES" attributeType="String"/>
+        <attribute name="box_icon" optional="YES" attributeType="String"/>
+        <attribute name="budget_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cattype" optional="YES" attributeType="String"/>
+        <attribute name="descr" optional="YES" attributeType="String"/>
+        <attribute name="flex1" optional="YES" attributeType="String"/>
+        <attribute name="flex2" optional="YES" attributeType="String"/>
+        <attribute name="glaccno" optional="YES" attributeType="String"/>
+        <attribute name="is_expense" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="parent_category_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Hkb_event" representedClassName="Hkb_event" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="enddate" optional="YES" attributeType="String"/>
+        <attribute name="eventid" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="startdate" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Hkb_goal" representedClassName=".Hkb_goal" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="actualenddate" optional="YES" attributeType="String"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="createdon" optional="YES" attributeType="String"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="flex1" optional="YES" attributeType="String"/>
+        <attribute name="flex2" optional="YES" attributeType="String"/>
+        <attribute name="goaldescription" optional="YES" attributeType="String"/>
+        <attribute name="goalId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="goalType" optional="YES" attributeType="String"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String"/>
+        <attribute name="targetenddate" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Hkb_goal_trx" representedClassName=".Hkb_goal_trx" syncable="YES">
+        <attribute name="accountid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="goalid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hkbvchid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isdeposit" optional="YES" attributeType="String"/>
+        <attribute name="trxdate" optional="YES" attributeType="String"/>
+        <attribute name="trxday" optional="YES" attributeType="String"/>
+        <attribute name="trxmonth" optional="YES" attributeType="String"/>
+        <attribute name="trxyear" optional="YES" attributeType="String"/>
+        <attribute name="vchdescription" optional="YES" attributeType="String"/>
+        <attribute name="voucherId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Hkb_notifications" representedClassName=".Hkb_notifications" syncable="YES">
+        <attribute name="buttontext" optional="YES" attributeType="String"/>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="codetype" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="String"/>
+        <attribute name="day" optional="YES" attributeType="String"/>
+        <attribute name="expirydate" optional="YES" attributeType="String"/>
+        <attribute name="flex1" optional="YES" attributeType="String"/>
+        <attribute name="flex2" optional="YES" attributeType="String"/>
+        <attribute name="flex3" optional="YES" attributeType="String"/>
+        <attribute name="imageurl" optional="YES" attributeType="String"/>
+        <attribute name="isRead" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="month" optional="YES" attributeType="String"/>
+        <attribute name="notification_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Hkb_reminder" representedClassName=".Hkb_reminder" syncable="YES">
+        <attribute name="account_from" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="accountid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="createdon" optional="YES" attributeType="String"/>
+        <attribute name="event_id" optional="YES" attributeType="String"/>
+        <attribute name="flex" optional="YES" attributeType="String"/>
+        <attribute name="flex1" optional="YES" attributeType="String"/>
+        <attribute name="flex2" optional="YES" attributeType="String"/>
+        <attribute name="isexpense" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="recurring" optional="YES" attributeType="String"/>
+        <attribute name="reminderId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmdate" optional="YES" attributeType="String"/>
+        <attribute name="rmday" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmhours" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmminutes" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmmonth" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmtime" optional="YES" attributeType="String"/>
+        <attribute name="rmweek" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rmyear" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="vch_description" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Hkb_voucher" representedClassName=".Hkb_voucher" syncable="YES">
+        <attribute name="account_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="accountname" optional="YES" attributeType="String"/>
+        <attribute name="active" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="category_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="categoryname" optional="YES" attributeType="String"/>
+        <attribute name="created_on" optional="YES" attributeType="String"/>
+        <attribute name="eventid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="eventname" optional="YES" attributeType="String"/>
+        <attribute name="fcamount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="fccurrency" optional="YES" attributeType="String"/>
+        <attribute name="fcrate" optional="YES" attributeType="String"/>
+        <attribute name="flex1" optional="YES" attributeType="String"/>
+        <attribute name="flex2" optional="YES" attributeType="String"/>
+        <attribute name="flex3" optional="YES" attributeType="String"/>
+        <attribute name="flex4" optional="YES" attributeType="String"/>
+        <attribute name="flex5" optional="YES" attributeType="String"/>
+        <attribute name="flex6" optional="YES" attributeType="String"/>
+        <attribute name="flex7" optional="YES" attributeType="String"/>
+        <attribute name="flex8" optional="YES" attributeType="String"/>
+        <attribute name="flex9" optional="YES" attributeType="String"/>
+        <attribute name="flex10" optional="YES" attributeType="String"/>
+        <attribute name="is_synced" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="month" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="no_serial" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="party_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ref_no" optional="YES" attributeType="String"/>
+        <attribute name="tag" optional="YES" attributeType="String"/>
+        <attribute name="travelmode" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="travelmodeplace" optional="YES" attributeType="String"/>
+        <attribute name="travlemodelocation" optional="YES" attributeType="String"/>
+        <attribute name="updated_on" optional="YES" attributeType="String"/>
+        <attribute name="use_case" optional="YES" attributeType="String"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vch_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="vch_date" optional="YES" attributeType="String"/>
+        <attribute name="vch_day" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vch_description" optional="YES" attributeType="String"/>
+        <attribute name="vch_image" optional="YES" attributeType="String" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="vch_no" optional="YES" attributeType="String"/>
+        <attribute name="vch_type" optional="YES" attributeType="String"/>
+        <attribute name="vch_year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="vchcurrency" optional="YES" attributeType="String"/>
+        <attribute name="vchtrxplace" optional="YES" attributeType="String"/>
+        <attribute name="voucher_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Hkb_account" positionX="54" positionY="99" width="128" height="315"/>
+        <element name="Hkb_activity" positionX="27" positionY="198" width="128" height="210"/>
+        <element name="Hkb_budget" positionX="27" positionY="198" width="128" height="135"/>
+        <element name="Hkb_category" positionX="45" positionY="90" width="128" height="300"/>
+        <element name="Hkb_event" positionX="27" positionY="198" width="128" height="150"/>
+        <element name="Hkb_goal" positionX="0" positionY="45" width="128" height="255"/>
+        <element name="Hkb_goal_trx" positionX="36" positionY="81" width="128" height="240"/>
+        <element name="Hkb_notifications" positionX="54" positionY="99" width="128" height="315"/>
+        <element name="Hkb_reminder" positionX="27" positionY="198" width="128" height="405"/>
+        <element name="Hkb_voucher" positionX="27" positionY="72" width="128" height="705"/>
+    </elements>
+</model>

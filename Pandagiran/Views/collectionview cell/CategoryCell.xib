@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IncomeExpenseViewController" customModule="Hysab_Kytab" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="79"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUp-cu-UdS" customClass="CircularViewStroke" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="22.5" y="8" width="45" height="45"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_1" translatesAutoresizingMaskIntoConstraints="NO" id="iln-Sr-OL9" customClass="CircularImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="35" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="GSd-WK-CN9"/>
+                                    <constraint firstAttribute="height" constant="35" id="jvv-Zq-J5m"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iln-Sr-OL9" secondAttribute="trailing" constant="5" id="7tM-6I-at8"/>
+                            <constraint firstItem="iln-Sr-OL9" firstAttribute="leading" secondItem="xUp-cu-UdS" secondAttribute="leading" constant="5" id="BrJ-Xo-kIA"/>
+                            <constraint firstAttribute="bottom" secondItem="iln-Sr-OL9" secondAttribute="bottom" constant="5" id="aZb-dp-vNx"/>
+                            <constraint firstItem="iln-Sr-OL9" firstAttribute="centerY" secondItem="xUp-cu-UdS" secondAttribute="centerY" id="bzU-Sq-nRa"/>
+                            <constraint firstItem="iln-Sr-OL9" firstAttribute="top" secondItem="xUp-cu-UdS" secondAttribute="top" constant="5" id="pjh-X2-U3y"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eating out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J62-Gp-eae">
+                        <rect key="frame" x="5" y="58" width="80" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="J62-Gp-eae" secondAttribute="trailing" constant="5" id="OsY-bM-D9o"/>
+                <constraint firstItem="J62-Gp-eae" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ROF-3C-2Iv"/>
+                <constraint firstItem="xUp-cu-UdS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="SqN-1Y-enD"/>
+                <constraint firstItem="J62-Gp-eae" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dBE-Tv-XRE"/>
+                <constraint firstItem="xUp-cu-UdS" firstAttribute="centerX" secondItem="J62-Gp-eae" secondAttribute="centerX" id="m7r-DZ-ZmR"/>
+                <constraint firstItem="J62-Gp-eae" firstAttribute="top" secondItem="xUp-cu-UdS" secondAttribute="bottom" constant="5" id="uZ1-mx-aqz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="90" height="79"/>
+            <connections>
+                <outlet property="bg_view" destination="xUp-cu-UdS" id="dZh-dN-7Pj"/>
+                <outlet property="categoryImage" destination="iln-Sr-OL9" id="r3b-yw-5Ou"/>
+                <outlet property="category_title" destination="J62-Gp-eae" id="UlR-Hf-ywb"/>
+            </connections>
+            <point key="canvasLocation" x="270.39999999999998" y="181.25937031484258"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bt_1" width="24" height="24"/>
+    </resources>
+</document>

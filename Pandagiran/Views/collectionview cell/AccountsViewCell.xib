@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AccountsViewCell" id="gTV-IL-0wX" customClass="AccountsViewCell" customModule="Pandagiran" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="203" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-fL-3Nn">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ATM/Debit Card akjdjknsa kadjsdka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUc-sd-JJR">
+                                <rect key="frame" x="8" y="8" width="190" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="10,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-nc-Bsh">
+                                <rect key="frame" x="8" y="27.5" width="190" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.1647058824" green="0.48627450979999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xc-fs-USu">
+                                <rect key="frame" x="0.0" y="0.0" width="3" height="60"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.1671285656" blue="0.21570791340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="3" id="gJr-ty-xwj"/>
+                                    <constraint firstAttribute="height" constant="60" id="jYR-or-9hm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QQJ-nc-Bsh" firstAttribute="leading" secondItem="4Xc-fs-USu" secondAttribute="trailing" constant="5" id="07e-AP-b55"/>
+                            <constraint firstItem="QQJ-nc-Bsh" firstAttribute="top" secondItem="WUc-sd-JJR" secondAttribute="bottom" constant="5" id="09s-94-2jT"/>
+                            <constraint firstItem="WUc-sd-JJR" firstAttribute="leading" secondItem="4Xc-fs-USu" secondAttribute="trailing" constant="5" id="2Ce-CK-Scy"/>
+                            <constraint firstAttribute="trailing" secondItem="QQJ-nc-Bsh" secondAttribute="trailing" constant="5" id="OhE-sX-6qs"/>
+                            <constraint firstItem="4Xc-fs-USu" firstAttribute="top" secondItem="gQz-fL-3Nn" secondAttribute="top" id="b54-BN-A9L"/>
+                            <constraint firstItem="WUc-sd-JJR" firstAttribute="top" secondItem="gQz-fL-3Nn" secondAttribute="top" constant="8" id="dlv-wa-Or1"/>
+                            <constraint firstAttribute="trailing" secondItem="WUc-sd-JJR" secondAttribute="trailing" constant="5" id="pRJ-XG-eOm"/>
+                            <constraint firstItem="4Xc-fs-USu" firstAttribute="leading" secondItem="gQz-fL-3Nn" secondAttribute="leading" id="pkg-js-wNT"/>
+                            <constraint firstAttribute="bottom" secondItem="QQJ-nc-Bsh" secondAttribute="bottom" constant="8" id="uly-MD-Bty"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderVisible" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCg-uv-24W">
+                        <rect key="frame" x="0.0" y="0.0" width="203" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Add Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5y5-7P-lVP">
+                                <rect key="frame" x="0.0" y="41" width="203" height="12"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="10"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add_circle" translatesAutoresizingMaskIntoConstraints="NO" id="Mxy-Hx-L2T" customClass="TintedImageView" customModule="Pandagiran" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="5" width="203" height="36"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" systemColor="tintColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mxy-Hx-L2T" firstAttribute="leading" secondItem="MCg-uv-24W" secondAttribute="leading" id="264-xS-OFF"/>
+                            <constraint firstItem="Mxy-Hx-L2T" firstAttribute="top" secondItem="MCg-uv-24W" secondAttribute="top" constant="5" id="ANl-tb-IxT"/>
+                            <constraint firstAttribute="bottom" secondItem="5y5-7P-lVP" secondAttribute="bottom" constant="8" id="KIv-JK-mfO"/>
+                            <constraint firstAttribute="trailing" secondItem="Mxy-Hx-L2T" secondAttribute="trailing" id="NfC-at-UTX"/>
+                            <constraint firstItem="5y5-7P-lVP" firstAttribute="top" secondItem="Mxy-Hx-L2T" secondAttribute="bottom" id="Tsg-oB-TB2"/>
+                            <constraint firstItem="5y5-7P-lVP" firstAttribute="leading" secondItem="MCg-uv-24W" secondAttribute="leading" id="jKm-on-BlU"/>
+                            <constraint firstAttribute="trailing" secondItem="5y5-7P-lVP" secondAttribute="trailing" id="qtP-1m-Hpt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MCg-uv-24W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1jL-ii-h8R"/>
+                <constraint firstItem="MCg-uv-24W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5W8-5p-g26"/>
+                <constraint firstAttribute="bottom" secondItem="gQz-fL-3Nn" secondAttribute="bottom" id="7Q5-eL-7p4"/>
+                <constraint firstAttribute="bottom" secondItem="MCg-uv-24W" secondAttribute="bottom" id="Nz1-bc-GMe"/>
+                <constraint firstItem="gQz-fL-3Nn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XzE-SX-gZv"/>
+                <constraint firstItem="gQz-fL-3Nn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aC2-9g-K2T"/>
+                <constraint firstAttribute="trailing" secondItem="MCg-uv-24W" secondAttribute="trailing" id="clT-vo-l0O"/>
+                <constraint firstAttribute="trailing" secondItem="gQz-fL-3Nn" secondAttribute="trailing" id="dQ8-DZ-ygH"/>
+            </constraints>
+            <size key="customSize" width="203" height="61"/>
+            <connections>
+                <outlet property="backgroundView" destination="gQz-fL-3Nn" id="i27-B7-fwF"/>
+                <outlet property="bgView" destination="gQz-fL-3Nn" id="hH4-es-zhj"/>
+                <outlet property="tv_account" destination="WUc-sd-JJR" id="A9I-7a-lg8"/>
+                <outlet property="tv_amount" destination="QQJ-nc-Bsh" id="EY3-8d-rIb"/>
+                <outlet property="view_add_account" destination="MCg-uv-24W" id="HZt-yQ-p0o"/>
+                <outlet property="view_amount_color" destination="4Xc-fs-USu" id="m16-3o-Yc4"/>
+            </connections>
+            <point key="canvasLocation" x="63.200000000000003" y="31.03448275862069"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="Mxy-Hx-L2T">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_add_circle" width="24" height="24"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

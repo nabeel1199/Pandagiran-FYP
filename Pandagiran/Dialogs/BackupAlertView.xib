@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BackupAlertView" customModule="Hysab_Kytab" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="jZX-lo-06w" id="Cbl-bn-Zim"/>
+                <outlet property="backupButton" destination="BmE-ca-e3R" id="tcg-Kh-bpY"/>
+                <outlet property="backupTitleLBL" destination="9lf-Mu-Yz6" id="wKv-VD-mT5"/>
+                <outlet property="closeButton" destination="5pz-p9-Ejd" id="oZM-Oj-BJa"/>
+                <outlet property="detailButton" destination="Hbe-YB-yCX" id="otY-xE-iVe"/>
+                <outlet property="infoButton" destination="SZc-IP-qfU" id="DaR-Id-RwO"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="VeU-z7-mtY"/>
+                <outlet property="syncingCountLBL" destination="jeP-Lb-Kvp" id="bel-rY-lWs"/>
+                <outlet property="unsyncRecordLBL" destination="xZH-1O-bfC" id="kbF-lF-5Ft"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfW-17-x5h" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                    <rect key="frame" x="20" y="10" width="435" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backup Alert" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-Mu-Yz6">
+                            <rect key="frame" x="20" y="12" width="92.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <color key="textColor" red="1" green="0.32156862745098036" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="0 Records unsynced " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZH-1O-bfC">
+                            <rect key="frame" x="20" y="40" width="136" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pz-p9-Ejd">
+                            <rect key="frame" x="401" y="10" width="24" height="24"/>
+                            <state key="normal" image="ic_close_24.png"/>
+                            <connections>
+                                <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="9Mh-vR-vGD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmE-ca-e3R">
+                            <rect key="frame" x="357" y="40" width="58" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="BACKUP">
+                                <color key="titleColor" red="0.1647058824" green="0.48627450979999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbe-YB-yCX">
+                            <rect key="frame" x="289" y="40" width="58" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <state key="normal" title="DETAILS">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="1/100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeP-Lb-Kvp">
+                            <rect key="frame" x="164" y="44" width="115" height="15"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jZX-lo-06w">
+                            <rect key="frame" x="120.5" y="11" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-IP-qfU">
+                            <rect key="frame" x="120.5" y="11" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="3Db-I0-4f5"/>
+                                <constraint firstAttribute="height" constant="20" id="48o-6n-vCZ"/>
+                            </constraints>
+                            <state key="normal" image="ic_info"/>
+                            <connections>
+                                <action selector="infoButtonPressed:" destination="-1" eventType="touchUpInside" id="Azx-mc-bwe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="9lf-Mu-Yz6" firstAttribute="leading" secondItem="wfW-17-x5h" secondAttribute="leading" constant="20" id="1YO-qI-KbR"/>
+                        <constraint firstItem="BmE-ca-e3R" firstAttribute="top" secondItem="9lf-Mu-Yz6" secondAttribute="bottom" constant="10" id="20Y-Sg-mQA"/>
+                        <constraint firstItem="jZX-lo-06w" firstAttribute="centerY" secondItem="9lf-Mu-Yz6" secondAttribute="centerY" id="D3Z-Ky-o4e"/>
+                        <constraint firstItem="Hbe-YB-yCX" firstAttribute="top" secondItem="9lf-Mu-Yz6" secondAttribute="bottom" constant="10" id="Dv0-VE-EH9"/>
+                        <constraint firstItem="jeP-Lb-Kvp" firstAttribute="leading" secondItem="xZH-1O-bfC" secondAttribute="trailing" constant="8" id="Kfa-6o-teL"/>
+                        <constraint firstItem="xZH-1O-bfC" firstAttribute="leading" secondItem="wfW-17-x5h" secondAttribute="leading" constant="20" id="L14-KE-t6B"/>
+                        <constraint firstItem="9lf-Mu-Yz6" firstAttribute="top" secondItem="wfW-17-x5h" secondAttribute="top" constant="12" id="Mvc-8M-d3H"/>
+                        <constraint firstAttribute="trailing" secondItem="BmE-ca-e3R" secondAttribute="trailing" constant="20" id="Nnc-cK-7e7"/>
+                        <constraint firstItem="BmE-ca-e3R" firstAttribute="leading" secondItem="Hbe-YB-yCX" secondAttribute="trailing" constant="10" id="VgH-DE-oMm"/>
+                        <constraint firstAttribute="bottom" secondItem="xZH-1O-bfC" secondAttribute="bottom" constant="12" id="YYg-we-FEw"/>
+                        <constraint firstItem="SZc-IP-qfU" firstAttribute="leading" secondItem="9lf-Mu-Yz6" secondAttribute="trailing" constant="8" id="cVe-J7-6Jm"/>
+                        <constraint firstItem="SZc-IP-qfU" firstAttribute="centerY" secondItem="9lf-Mu-Yz6" secondAttribute="centerY" id="ddX-Hs-R8M"/>
+                        <constraint firstItem="jZX-lo-06w" firstAttribute="leading" secondItem="9lf-Mu-Yz6" secondAttribute="trailing" constant="8" id="gtd-BR-flK"/>
+                        <constraint firstItem="xZH-1O-bfC" firstAttribute="top" secondItem="9lf-Mu-Yz6" secondAttribute="bottom" constant="10" id="jve-sX-LhP"/>
+                        <constraint firstItem="jeP-Lb-Kvp" firstAttribute="centerY" secondItem="xZH-1O-bfC" secondAttribute="centerY" id="opN-ho-8dY"/>
+                        <constraint firstAttribute="trailing" secondItem="5pz-p9-Ejd" secondAttribute="trailing" constant="10" id="pUA-4d-vye"/>
+                        <constraint firstItem="Hbe-YB-yCX" firstAttribute="leading" secondItem="jeP-Lb-Kvp" secondAttribute="trailing" constant="10" id="pV1-ht-3cS"/>
+                        <constraint firstItem="5pz-p9-Ejd" firstAttribute="top" secondItem="wfW-17-x5h" secondAttribute="top" constant="10" id="zgH-7E-3B7"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wfW-17-x5h" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="2qm-kt-kQC"/>
+                <constraint firstAttribute="bottom" secondItem="wfW-17-x5h" secondAttribute="bottom" constant="10" id="HWi-vF-iXX"/>
+                <constraint firstItem="wfW-17-x5h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="V3y-0d-qaB"/>
+                <constraint firstAttribute="trailing" secondItem="wfW-17-x5h" secondAttribute="trailing" constant="20" id="WFA-rL-nhJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="173.18840579710147" y="-166.40625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_24.png" width="24" height="24"/>
+        <image name="ic_info" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

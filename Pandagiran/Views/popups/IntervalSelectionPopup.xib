@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntervalSelectionPopup" customModule="Pandagiran" customModuleProvider="target">
+            <connections>
+                <outlet property="intervalTableHeight" destination="ZsO-8R-7UJ" id="Ql2-zl-Ilh"/>
+                <outlet property="popup_view" destination="uDo-rl-Qau" id="CSo-bf-LKi"/>
+                <outlet property="table_view_interval" destination="Bfi-Ix-96K" id="lEh-Vz-Zf2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDo-rl-Qau" customClass="CardView" customModule="Pandagiran" customModuleProvider="target">
+                    <rect key="frame" x="40" y="215" width="295" height="237"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Interval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVN-n1-hCS" customClass="CustomFontLabel" customModule="Pandagiran" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="126.5" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F08-0T-bft">
+                            <rect key="frame" x="263" y="14" width="24" height="24"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="ic_clear"/>
+                            <connections>
+                                <action selector="onCloseTapped:" destination="-1" eventType="touchUpInside" id="7g7-9n-drE"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bfi-Ix-96K">
+                            <rect key="frame" x="0.0" y="54" width="295" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="ZsO-8R-7UJ"/>
+                            </constraints>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvH-iA-y3u">
+                            <rect key="frame" x="233" y="198" width="46" height="29"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="APPLY">
+                                <color key="titleColor" systemColor="tintColor"/>
+                            </state>
+                            <connections>
+                                <action selector="onApplyTapped:" destination="-1" eventType="touchUpInside" id="9SX-Xp-GiN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Bfi-Ix-96K" firstAttribute="leading" secondItem="uDo-rl-Qau" secondAttribute="leading" id="0MY-eV-YEE"/>
+                        <constraint firstItem="Bfi-Ix-96K" firstAttribute="top" secondItem="F08-0T-bft" secondAttribute="bottom" constant="16" id="RBc-HD-5cW"/>
+                        <constraint firstItem="DVN-n1-hCS" firstAttribute="leading" secondItem="uDo-rl-Qau" secondAttribute="leading" constant="16" id="UE8-xN-QDK"/>
+                        <constraint firstItem="RvH-iA-y3u" firstAttribute="top" secondItem="Bfi-Ix-96K" secondAttribute="bottom" constant="16" id="WWJ-eY-FjK"/>
+                        <constraint firstItem="DVN-n1-hCS" firstAttribute="top" secondItem="uDo-rl-Qau" secondAttribute="top" constant="16" id="Yja-uA-9eR"/>
+                        <constraint firstAttribute="trailing" secondItem="F08-0T-bft" secondAttribute="trailing" constant="8" id="aKH-cJ-wYx"/>
+                        <constraint firstAttribute="bottom" secondItem="RvH-iA-y3u" secondAttribute="bottom" constant="10" id="cRH-39-R4i"/>
+                        <constraint firstAttribute="trailing" secondItem="Bfi-Ix-96K" secondAttribute="trailing" id="fWL-Cq-EAf"/>
+                        <constraint firstAttribute="trailing" secondItem="RvH-iA-y3u" secondAttribute="trailing" constant="16" id="mz6-by-OU7"/>
+                        <constraint firstItem="F08-0T-bft" firstAttribute="centerY" secondItem="DVN-n1-hCS" secondAttribute="centerY" id="qZE-am-jnw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uDo-rl-Qau" secondAttribute="trailing" constant="40" id="22S-2B-eDr"/>
+                <constraint firstItem="uDo-rl-Qau" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="BuW-xm-pW7"/>
+                <constraint firstItem="uDo-rl-Qau" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CHK-Vk-YAG"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="123.68815592203899"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="DVN-n1-hCS">
+            <size key="intrinsicContentSize" width="126.5" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_clear" width="24" height="24"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

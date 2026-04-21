@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChartReportsLegendsViewCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-KN-Sig">
+                        <rect key="frame" x="0.0" y="5" width="150" height="33.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-Hq-5Eh" customClass="CircularView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="8" y="12" width="10" height="10"/>
+                                <color key="backgroundColor" red="1" green="0.030936174600000001" blue="0.29224696709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="GmB-Rr-H45"/>
+                                    <constraint firstAttribute="width" constant="10" id="fiz-N4-1ZR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMw-uD-fqP">
+                                <rect key="frame" x="23" y="2" width="127" height="29.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kMw-uD-fqP" secondAttribute="trailing" id="1su-IA-vWa"/>
+                            <constraint firstAttribute="bottom" secondItem="kMw-uD-fqP" secondAttribute="bottom" constant="2" id="DOa-YC-h0t"/>
+                            <constraint firstItem="7eJ-Hq-5Eh" firstAttribute="centerY" secondItem="x5q-KN-Sig" secondAttribute="centerY" id="HAV-yH-9PC"/>
+                            <constraint firstItem="kMw-uD-fqP" firstAttribute="leading" secondItem="7eJ-Hq-5Eh" secondAttribute="trailing" constant="5" id="KRW-B3-KO2"/>
+                            <constraint firstAttribute="width" constant="150" id="KnE-jK-sA8"/>
+                            <constraint firstItem="kMw-uD-fqP" firstAttribute="top" secondItem="x5q-KN-Sig" secondAttribute="top" constant="2" id="fFP-Yn-Qe9"/>
+                            <constraint firstItem="7eJ-Hq-5Eh" firstAttribute="leading" secondItem="x5q-KN-Sig" secondAttribute="leading" constant="8" id="mnX-pW-dTX"/>
+                            <constraint firstItem="kMw-uD-fqP" firstAttribute="centerY" secondItem="x5q-KN-Sig" secondAttribute="centerY" id="xu0-zn-9dH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-9x-Hem">
+                        <rect key="frame" x="297" y="14.5" width="60" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4lm-cd-gFQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdD-DY-e0Q">
+                        <rect key="frame" x="189" y="14.5" width="100" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="u8J-Ob-Z1P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="x5q-KN-Sig" secondAttribute="bottom" constant="5" id="2K7-zc-IVg"/>
+                    <constraint firstAttribute="trailing" secondItem="BgC-9x-Hem" secondAttribute="trailing" constant="8" id="3nh-PQ-UNG"/>
+                    <constraint firstItem="BgC-9x-Hem" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MFl-Rf-Ogp"/>
+                    <constraint firstItem="x5q-KN-Sig" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rn5-Ic-aSL"/>
+                    <constraint firstItem="x5q-KN-Sig" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WS0-Ha-j2W"/>
+                    <constraint firstItem="PdD-DY-e0Q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="X2e-xm-8a8"/>
+                    <constraint firstItem="BgC-9x-Hem" firstAttribute="leading" secondItem="PdD-DY-e0Q" secondAttribute="trailing" constant="8" id="lGR-qY-9bA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="category_color" destination="7eJ-Hq-5Eh" id="bWn-Lh-9Oa"/>
+                <outlet property="category_title" destination="kMw-uD-fqP" id="cOy-bW-qBn"/>
+                <outlet property="label_amount_spent" destination="PdD-DY-e0Q" id="xcE-2v-7Nn"/>
+                <outlet property="label_percentage_spent" destination="BgC-9x-Hem" id="vxB-Yp-HZA"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="82"/>
+        </tableViewCell>
+    </objects>
+</document>

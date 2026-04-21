@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldCell" rowHeight="96" id="KGk-i7-Jjw" customClass="TextFieldCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07W-ax-dG3">
+                        <rect key="frame" x="4" y="8" width="39" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" systemColor="systemGrayColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-e4-0nb" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="4" y="43" width="314" height="45"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V4O-lD-dJ3" customClass="customTextField" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="10" y="5" width="294" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fN5-KJ-M2P">
+                                <rect key="frame" x="286" y="10.5" width="24" height="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_drop_down"/>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Jg-54-avd">
+                                <rect key="frame" x="0.0" y="0.0" width="287" height="45"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="5CH-Rs-PYb"/>
+                            <constraint firstAttribute="bottom" secondItem="V4O-lD-dJ3" secondAttribute="bottom" constant="5" id="APl-uH-Mkk"/>
+                            <constraint firstItem="3Jg-54-avd" firstAttribute="top" secondItem="Nyv-e4-0nb" secondAttribute="top" id="AVZ-Vb-3ZZ"/>
+                            <constraint firstItem="V4O-lD-dJ3" firstAttribute="leading" secondItem="Nyv-e4-0nb" secondAttribute="leading" constant="10" id="Anx-TI-HzG"/>
+                            <constraint firstItem="V4O-lD-dJ3" firstAttribute="top" secondItem="Nyv-e4-0nb" secondAttribute="top" constant="5" id="EpR-r1-GQy"/>
+                            <constraint firstItem="3Jg-54-avd" firstAttribute="leading" secondItem="Nyv-e4-0nb" secondAttribute="leading" id="Nu7-j3-cfn"/>
+                            <constraint firstAttribute="trailing" secondItem="fN5-KJ-M2P" secondAttribute="trailing" constant="4" id="Wu8-XQ-RVM"/>
+                            <constraint firstAttribute="trailing" secondItem="3Jg-54-avd" secondAttribute="trailing" constant="27" id="ccH-3i-kpS"/>
+                            <constraint firstAttribute="trailing" secondItem="V4O-lD-dJ3" secondAttribute="trailing" constant="10" id="k9U-RV-Oln"/>
+                            <constraint firstAttribute="bottom" secondItem="3Jg-54-avd" secondAttribute="bottom" id="tJV-Ba-CPU"/>
+                            <constraint firstItem="fN5-KJ-M2P" firstAttribute="centerY" secondItem="Nyv-e4-0nb" secondAttribute="centerY" id="urZ-YO-wef"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" systemColor="systemGray2Color"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nyv-e4-0nb" secondAttribute="trailing" constant="8" id="DNp-gX-hEj"/>
+                    <constraint firstItem="07W-ax-dG3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VlV-0P-W4f"/>
+                    <constraint firstItem="07W-ax-dG3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="YHR-Z9-LrN"/>
+                    <constraint firstItem="Nyv-e4-0nb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="Ygg-Kf-m3C"/>
+                    <constraint firstAttribute="bottom" secondItem="Nyv-e4-0nb" secondAttribute="bottom" constant="8" id="pLw-zc-gzk"/>
+                    <constraint firstItem="Nyv-e4-0nb" firstAttribute="top" secondItem="07W-ax-dG3" secondAttribute="bottom" constant="5" id="rA2-vF-HXy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="anchorView" destination="Nyv-e4-0nb" id="60c-C2-QC6"/>
+                <outlet property="dropDownBtn" destination="fN5-KJ-M2P" id="wWT-b0-c6c"/>
+                <outlet property="infoField" destination="V4O-lD-dJ3" id="c6l-Kw-hnL"/>
+                <outlet property="textFieldBtn" destination="3Jg-54-avd" id="sfe-oa-bbo"/>
+                <outlet property="textLbl" destination="07W-ax-dG3" id="XWl-zq-gKQ"/>
+            </connections>
+            <point key="canvasLocation" x="371" y="-29"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_drop_down" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

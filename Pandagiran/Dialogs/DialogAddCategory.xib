@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DialogAddCategory" customModule="Hysab_Kytab" customModuleProvider="target">
+            <connections>
+                <outlet property="bg_view" destination="Zch-wa-DR8" id="FYz-jn-Enb"/>
+                <outlet property="btn_ok" destination="2Ms-9Q-MWT" id="cnp-uP-IRV"/>
+                <outlet property="table_view" destination="XnR-Bh-Hqd" id="3mu-ad-Mp5"/>
+                <outlet property="view" destination="XFL-dK-hjg" id="TfZ-EO-btc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="XFL-dK-hjg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zch-wa-DR8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3F-w9-Cjc" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                            <rect key="frame" x="30" y="170" width="315" height="327"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Interval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgd-Xe-FYt">
+                                    <rect key="frame" x="8" y="8" width="299" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="textColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XnR-Bh-Hqd">
+                                    <rect key="frame" x="8" y="35.5" width="299" height="231.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ms-9Q-MWT">
+                                    <rect key="frame" x="273" y="287" width="30" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onOkTap:" destination="-1" eventType="touchUpInside" id="wqc-v0-2C9"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-bX-i24">
+                                    <rect key="frame" x="196" y="287" width="62" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onCancelTap:" destination="-1" eventType="touchUpInside" id="HzX-fc-qBA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="bfk-bX-i24" secondAttribute="bottom" constant="10" id="42P-x9-5Rf"/>
+                                <constraint firstItem="Xgd-Xe-FYt" firstAttribute="leading" secondItem="W3F-w9-Cjc" secondAttribute="leading" constant="8" id="BfX-5J-Cuh"/>
+                                <constraint firstItem="2Ms-9Q-MWT" firstAttribute="leading" secondItem="bfk-bX-i24" secondAttribute="trailing" constant="15" id="H18-F1-BSA"/>
+                                <constraint firstAttribute="trailing" secondItem="XnR-Bh-Hqd" secondAttribute="trailing" constant="8" id="HVZ-Ns-MM8"/>
+                                <constraint firstItem="Xgd-Xe-FYt" firstAttribute="top" secondItem="W3F-w9-Cjc" secondAttribute="top" constant="8" id="HiT-Tb-D87"/>
+                                <constraint firstItem="XnR-Bh-Hqd" firstAttribute="leading" secondItem="W3F-w9-Cjc" secondAttribute="leading" constant="8" id="KTH-Wb-Bi5"/>
+                                <constraint firstAttribute="bottom" secondItem="2Ms-9Q-MWT" secondAttribute="bottom" constant="10" id="TRV-Oi-xnG"/>
+                                <constraint firstItem="2Ms-9Q-MWT" firstAttribute="top" secondItem="XnR-Bh-Hqd" secondAttribute="bottom" constant="20" id="Tlu-R3-afr"/>
+                                <constraint firstAttribute="height" constant="335" id="YoI-M1-IPY"/>
+                                <constraint firstAttribute="trailing" secondItem="Xgd-Xe-FYt" secondAttribute="trailing" constant="8" id="eTs-87-prI"/>
+                                <constraint firstItem="XnR-Bh-Hqd" firstAttribute="top" secondItem="Xgd-Xe-FYt" secondAttribute="bottom" constant="8" id="hSU-a1-y7R"/>
+                                <constraint firstAttribute="trailing" secondItem="2Ms-9Q-MWT" secondAttribute="trailing" constant="12" id="mWK-u2-0Ur"/>
+                                <constraint firstItem="bfk-bX-i24" firstAttribute="top" secondItem="XnR-Bh-Hqd" secondAttribute="bottom" constant="20" id="rjv-9R-wcY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="W3F-w9-Cjc" firstAttribute="centerX" secondItem="Zch-wa-DR8" secondAttribute="centerX" id="0sc-EY-2sp"/>
+                        <constraint firstItem="W3F-w9-Cjc" firstAttribute="centerY" secondItem="Zch-wa-DR8" secondAttribute="centerY" id="ay0-1u-FlT"/>
+                        <constraint firstAttribute="trailing" secondItem="W3F-w9-Cjc" secondAttribute="trailing" constant="30" id="fFO-rD-lr4"/>
+                        <constraint firstItem="W3F-w9-Cjc" firstAttribute="leading" secondItem="Zch-wa-DR8" secondAttribute="leading" constant="30" id="u9W-JN-MYl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zch-wa-DR8" firstAttribute="top" secondItem="XFL-dK-hjg" secondAttribute="top" id="54s-jE-i8e"/>
+                <constraint firstItem="0QH-UQ-OJT" firstAttribute="trailing" secondItem="Zch-wa-DR8" secondAttribute="trailing" id="Ewe-oW-iBK"/>
+                <constraint firstItem="Zch-wa-DR8" firstAttribute="leading" secondItem="0QH-UQ-OJT" secondAttribute="leading" id="Zxy-v6-kvw"/>
+                <constraint firstItem="Zch-wa-DR8" firstAttribute="bottom" secondItem="0QH-UQ-OJT" secondAttribute="bottom" id="g7S-Sg-D4v"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="0QH-UQ-OJT"/>
+            <point key="canvasLocation" x="33.5" y="115.5"/>
+        </view>
+    </objects>
+</document>

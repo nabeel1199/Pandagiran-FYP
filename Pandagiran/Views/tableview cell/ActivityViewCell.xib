@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="ActivityViewCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="555" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="555" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LV-5M-R08" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="2" y="2" width="551" height="118"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdm-Hi-aOU" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="55" height="118"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="leo-iQ-E39">
+                                        <rect key="frame" x="12" y="35" width="31.5" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33C-9w-cf5">
+                                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zL5-6f-Uy1">
+                                                <rect key="frame" x="0.0" y="16" width="31.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S08-Di-iub">
+                                                <rect key="frame" x="0.0" y="32" width="31.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.32195179959999998" blue="0.29224696709999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="leo-iQ-E39" firstAttribute="centerX" secondItem="Gdm-Hi-aOU" secondAttribute="centerX" id="Fcu-VX-ewe"/>
+                                    <constraint firstItem="leo-iQ-E39" firstAttribute="centerY" secondItem="Gdm-Hi-aOU" secondAttribute="centerY" id="PyJ-vK-rbz"/>
+                                    <constraint firstAttribute="width" constant="55" id="dXr-3V-4f7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aBH-SS-OCv">
+                                <rect key="frame" x="65" y="16" width="364" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Transport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gph-Cz-LKR">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="66.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Careem. Home to office" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jN-v1-QT8">
+                                        <rect key="frame" x="0.0" y="71.5" width="364" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxv-TG-ied" customClass="TintedButton" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="503" y="35" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Ams-EM-4Qt"/>
+                                    <constraint firstAttribute="height" constant="48" id="wxm-db-ebr"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="ic_menu"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="10:00 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAg-47-sSl">
+                                <rect key="frame" x="437" y="50.5" width="66" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aBH-SS-OCv" firstAttribute="leading" secondItem="Gdm-Hi-aOU" secondAttribute="trailing" constant="10" id="05X-0y-CgI"/>
+                            <constraint firstItem="Gdm-Hi-aOU" firstAttribute="leading" secondItem="9LV-5M-R08" secondAttribute="leading" id="4Ad-fQ-dos"/>
+                            <constraint firstItem="HAg-47-sSl" firstAttribute="centerY" secondItem="9LV-5M-R08" secondAttribute="centerY" id="BxN-pl-d2R"/>
+                            <constraint firstAttribute="trailing" secondItem="cxv-TG-ied" secondAttribute="trailing" id="GJ0-vW-7a7"/>
+                            <constraint firstAttribute="bottom" secondItem="aBH-SS-OCv" secondAttribute="bottom" constant="16" id="GtT-Vy-FT6"/>
+                            <constraint firstAttribute="bottom" secondItem="Gdm-Hi-aOU" secondAttribute="bottom" id="JIE-rf-kat"/>
+                            <constraint firstItem="aBH-SS-OCv" firstAttribute="top" secondItem="9LV-5M-R08" secondAttribute="top" constant="16" id="Xy2-Cw-qbR"/>
+                            <constraint firstItem="Gdm-Hi-aOU" firstAttribute="top" secondItem="9LV-5M-R08" secondAttribute="top" id="blU-qc-xrP"/>
+                            <constraint firstItem="cxv-TG-ied" firstAttribute="leading" secondItem="HAg-47-sSl" secondAttribute="trailing" id="eu5-le-vI1"/>
+                            <constraint firstItem="aBH-SS-OCv" firstAttribute="leading" secondItem="Gdm-Hi-aOU" secondAttribute="trailing" constant="10" id="gvP-Uo-KAl"/>
+                            <constraint firstItem="cxv-TG-ied" firstAttribute="centerY" secondItem="9LV-5M-R08" secondAttribute="centerY" id="nrR-dp-vfa"/>
+                            <constraint firstItem="HAg-47-sSl" firstAttribute="leading" secondItem="aBH-SS-OCv" secondAttribute="trailing" constant="8" id="xc8-I9-JhB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9LV-5M-R08" secondAttribute="bottom" constant="2" id="Bcm-cH-Ggp"/>
+                    <constraint firstItem="9LV-5M-R08" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="EYe-RL-rK3"/>
+                    <constraint firstItem="9LV-5M-R08" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Q7y-pa-MbY"/>
+                    <constraint firstAttribute="trailing" secondItem="9LV-5M-R08" secondAttribute="trailing" constant="2" id="YN6-oe-X21"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btn_menu" destination="cxv-TG-ied" id="jOv-YU-2Ps"/>
+                <outlet property="date_bg" destination="Gdm-Hi-aOU" id="pfK-XM-bqE"/>
+                <outlet property="date_bg_view" destination="9LV-5M-R08" id="bkE-CD-A0d"/>
+                <outlet property="label_time" destination="HAg-47-sSl" id="TPX-Uj-cka"/>
+                <outlet property="stack_view_category" destination="aBH-SS-OCv" id="taT-S7-s72"/>
+                <outlet property="tv_category" destination="gph-Cz-LKR" id="n01-3g-8b9"/>
+                <outlet property="tv_date" destination="zL5-6f-Uy1" id="Dhg-Q2-oGk"/>
+                <outlet property="tv_day" destination="33C-9w-cf5" id="jKZ-wi-tzc"/>
+                <outlet property="tv_description" destination="0jN-v1-QT8" id="Dyn-WJ-Ega"/>
+                <outlet property="tv_year" destination="S08-Di-iub" id="xM7-dB-mMH"/>
+            </connections>
+            <point key="canvasLocation" x="78.5" y="282"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="cxv-TG-ied">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_menu" width="24" height="24"/>
+    </resources>
+</document>

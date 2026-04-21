@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EventsCell" id="gTV-IL-0wX" customClass="EventsCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhC-T8-8wQ" customClass="RoundedEdgesView" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="32" y="8" width="76" height="34"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_custom_radio" translatesAutoresizingMaskIntoConstraints="NO" id="biA-ni-Qs3">
+                                <rect key="frame" x="5" y="5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="8pf-fO-6bY"/>
+                                    <constraint firstAttribute="height" constant="24" id="KPW-gD-6A9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifY-pW-tVi">
+                                <rect key="frame" x="34" y="10" width="32" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ifY-pW-tVi" firstAttribute="leading" secondItem="biA-ni-Qs3" secondAttribute="trailing" constant="5" id="FVh-vk-qo4"/>
+                            <constraint firstAttribute="trailing" secondItem="ifY-pW-tVi" secondAttribute="trailing" constant="10" id="G07-Ei-Tk5"/>
+                            <constraint firstAttribute="trailing" secondItem="ifY-pW-tVi" secondAttribute="trailing" constant="10" id="akK-yX-dX4"/>
+                            <constraint firstItem="biA-ni-Qs3" firstAttribute="top" secondItem="dhC-T8-8wQ" secondAttribute="top" constant="5" id="b5H-AL-RaD"/>
+                            <constraint firstAttribute="bottom" secondItem="biA-ni-Qs3" secondAttribute="bottom" constant="5" id="ilb-eY-3ZJ"/>
+                            <constraint firstItem="ifY-pW-tVi" firstAttribute="centerY" secondItem="biA-ni-Qs3" secondAttribute="centerY" id="sc6-oS-z3W"/>
+                            <constraint firstItem="biA-ni-Qs3" firstAttribute="leading" secondItem="dhC-T8-8wQ" secondAttribute="leading" constant="5" id="xP9-l9-89i"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dhC-T8-8wQ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="c5x-Un-2Nt"/>
+                <constraint firstItem="dhC-T8-8wQ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="uuP-Ay-RM8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="140" height="50"/>
+            <connections>
+                <outlet property="iv_event_name" destination="biA-ni-Qs3" id="JJr-lY-gh6"/>
+                <outlet property="label_event_name" destination="ifY-pW-tVi" id="7tP-YP-uQz"/>
+            </connections>
+            <point key="canvasLocation" x="86.400000000000006" y="70.164917541229386"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_custom_radio" width="35.5" height="34.5"/>
+    </resources>
+</document>

@@ -1,0 +1,189 @@
+Target dependency graph (62 targets)
+Alamofire in Pods, no dependencies
+AppAuth in Pods, no dependencies
+Cache in Pods, no dependencies
+Charts in Pods, no dependencies
+Cosmos in Pods, no dependencies
+CryptoSwift in Pods, no dependencies
+DropDown in Pods, no dependencies
+FBSDKCoreKit in Pods, no dependencies
+FBSDKLoginKit in Pods, depends on:
+FBSDKCoreKit in Pods (explicit)
+FSCalendar in Pods, no dependencies
+FSPagerView in Pods, no dependencies
+FacebookCore in Pods, depends on:
+FBSDKCoreKit in Pods (explicit)
+nanopb in Pods, no dependencies
+GoogleDataTransport in Pods, depends on:
+nanopb in Pods (explicit)
+PromisesObjC in Pods, no dependencies
+GoogleUtilities in Pods, depends on:
+PromisesObjC in Pods (explicit)
+FirebaseCoreDiagnostics in Pods, depends on:
+GoogleDataTransport in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+nanopb in Pods (explicit)
+FirebaseCore in Pods, depends on:
+FirebaseCoreDiagnostics in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+FirebaseInstallations in Pods, depends on:
+FirebaseCore in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+PromisesObjC in Pods (explicit)
+GoogleAppMeasurement in Pods, depends on:
+GoogleUtilities in Pods (explicit)
+nanopb in Pods (explicit)
+FirebaseAnalytics in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+GoogleAppMeasurement in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+nanopb in Pods (explicit)
+leveldb-library in Pods, no dependencies
+FirebaseDatabase in Pods, depends on:
+FirebaseCore in Pods (explicit)
+leveldb-library in Pods (explicit)
+FirebaseDynamicLinks in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInAppMessagingDisplay in Pods, no dependencies
+FirebaseInstanceID in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+Protobuf in Pods, no dependencies
+FirebaseMessaging in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstanceID in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+Protobuf in Pods (explicit)
+FirebaseABTesting in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseRemoteConfig in Pods, depends on:
+FirebaseABTesting in Pods (explicit)
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+GoogleToolboxForMac in Pods, no dependencies
+GTMSessionFetcher in Pods, no dependencies
+FirebasePerformance in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+FirebaseRemoteConfig in Pods (explicit)
+GoogleDataTransport in Pods (explicit)
+GoogleToolboxForMac in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+Protobuf in Pods (explicit)
+Firebase in Pods, depends on:
+FirebaseAnalytics in Pods (explicit)
+FirebaseCore in Pods (explicit)
+FirebaseDatabase in Pods (explicit)
+FirebaseDynamicLinks in Pods (explicit)
+FirebaseInAppMessagingDisplay in Pods (explicit)
+FirebaseMessaging in Pods (explicit)
+FirebasePerformance in Pods (explicit)
+FirebaseCrashlytics in Pods, depends on:
+FirebaseCore in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+GoogleDataTransport in Pods (explicit)
+PromisesObjC in Pods (explicit)
+nanopb in Pods (explicit)
+GTMAppAuth in Pods, depends on:
+AppAuth in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+GoogleMaps in Pods, no dependencies
+GooglePlaces in Pods, depends on:
+GoogleMaps in Pods (explicit)
+GooglePlacePicker in Pods, depends on:
+GoogleMaps in Pods (explicit)
+GooglePlaces in Pods (explicit)
+GoogleSignIn in Pods, depends on:
+AppAuth in Pods (explicit)
+GTMAppAuth in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+ImageViewer in Pods, no dependencies
+Imaginary in Pods, depends on:
+Cache in Pods (explicit)
+Instructions in Pods, no dependencies
+Kingfisher in Pods, no dependencies
+Lightbox in Pods, depends on:
+Imaginary in Pods (explicit)
+Mixpanel-swift in Pods, no dependencies
+PinCodeTextField in Pods, no dependencies
+RangeSeekSlider in Pods, no dependencies
+SDWebImage in Pods, no dependencies
+SideMenu in Pods, no dependencies
+SkeletonView in Pods, no dependencies
+Starscream in Pods, no dependencies
+Socket.IO-Client-Swift in Pods, depends on:
+Starscream in Pods (explicit)
+SwiftyBeaver in Pods, no dependencies
+SwiftyJSON in Pods, no dependencies
+TTGSnackbar in Pods, no dependencies
+WSTagsField in Pods, no dependencies
+XLPagerTabStrip-XLPagerTabStrip in Pods, no dependencies
+XLPagerTabStrip in Pods, depends on:
+XLPagerTabStrip-XLPagerTabStrip in Pods (explicit)
+Pods-Pandagiran in Pods, depends on:
+Alamofire in Pods (explicit)
+AppAuth in Pods (explicit)
+Cache in Pods (explicit)
+Charts in Pods (explicit)
+Cosmos in Pods (explicit)
+CryptoSwift in Pods (explicit)
+DropDown in Pods (explicit)
+FBSDKCoreKit in Pods (explicit)
+FBSDKLoginKit in Pods (explicit)
+FSCalendar in Pods (explicit)
+FSPagerView in Pods (explicit)
+FacebookCore in Pods (explicit)
+Firebase in Pods (explicit)
+FirebaseABTesting in Pods (explicit)
+FirebaseAnalytics in Pods (explicit)
+FirebaseCore in Pods (explicit)
+FirebaseCoreDiagnostics in Pods (explicit)
+FirebaseCrashlytics in Pods (explicit)
+FirebaseDatabase in Pods (explicit)
+FirebaseDynamicLinks in Pods (explicit)
+FirebaseInAppMessagingDisplay in Pods (explicit)
+FirebaseInstallations in Pods (explicit)
+FirebaseInstanceID in Pods (explicit)
+FirebaseMessaging in Pods (explicit)
+FirebasePerformance in Pods (explicit)
+FirebaseRemoteConfig in Pods (explicit)
+GTMAppAuth in Pods (explicit)
+GTMSessionFetcher in Pods (explicit)
+GoogleAppMeasurement in Pods (explicit)
+GoogleDataTransport in Pods (explicit)
+GoogleMaps in Pods (explicit)
+GooglePlacePicker in Pods (explicit)
+GooglePlaces in Pods (explicit)
+GoogleSignIn in Pods (explicit)
+GoogleToolboxForMac in Pods (explicit)
+GoogleUtilities in Pods (explicit)
+ImageViewer in Pods (explicit)
+Imaginary in Pods (explicit)
+Instructions in Pods (explicit)
+Kingfisher in Pods (explicit)
+Lightbox in Pods (explicit)
+Mixpanel-swift in Pods (explicit)
+PinCodeTextField in Pods (explicit)
+PromisesObjC in Pods (explicit)
+Protobuf in Pods (explicit)
+RangeSeekSlider in Pods (explicit)
+SDWebImage in Pods (explicit)
+SideMenu in Pods (explicit)
+SkeletonView in Pods (explicit)
+Socket.IO-Client-Swift in Pods (explicit)
+Starscream in Pods (explicit)
+SwiftyBeaver in Pods (explicit)
+SwiftyJSON in Pods (explicit)
+TTGSnackbar in Pods (explicit)
+WSTagsField in Pods (explicit)
+XLPagerTabStrip in Pods (explicit)
+leveldb-library in Pods (explicit)
+nanopb in Pods (explicit)
+Pods-PandagiranTests in Pods, depends on:
+Pods-Pandagiran in Pods (explicit)
+Pods-PandagiranUITests in Pods, depends on:
+Pods-Pandagiran in Pods (explicit)

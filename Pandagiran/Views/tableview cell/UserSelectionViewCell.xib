@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserSelectionViewCell" rowHeight="76" id="KGk-i7-Jjw" customClass="UserSelectionViewCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="459" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="459" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqn-n0-JPf" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="427" height="59.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_3" translatesAutoresizingMaskIntoConstraints="NO" id="nbZ-m5-0jW" customClass="TintedImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="16" y="10" width="24" height="39.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE6-dz-iqk">
+                                <rect key="frame" x="56" y="21.5" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1cf-y6-IEF">
+                                <rect key="frame" x="422" y="0.0" width="0.0" height="59.5"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_edit" translatesAutoresizingMaskIntoConstraints="NO" id="nzO-1f-kJe" customClass="TintedImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="24"/>
+                                        <color key="tintColor" red="0.1647058824" green="0.48627450979999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                                <color key="value" red="0.1647058824" green="0.48627450979999998" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_visibility" translatesAutoresizingMaskIntoConstraints="NO" id="7m6-st-Ba8" customClass="TintedImageView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="24"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1cf-y6-IEF" secondAttribute="bottom" id="TF7-lC-ucP"/>
+                            <constraint firstAttribute="bottom" secondItem="nbZ-m5-0jW" secondAttribute="bottom" constant="10" id="Vr2-m4-yi5"/>
+                            <constraint firstAttribute="trailing" secondItem="1cf-y6-IEF" secondAttribute="trailing" constant="5" id="e6q-Ep-kTs"/>
+                            <constraint firstItem="1cf-y6-IEF" firstAttribute="top" secondItem="Qqn-n0-JPf" secondAttribute="top" id="gAU-vm-T6v"/>
+                            <constraint firstItem="nbZ-m5-0jW" firstAttribute="leading" secondItem="Qqn-n0-JPf" secondAttribute="leading" constant="16" id="j6D-e2-Kvz"/>
+                            <constraint firstItem="hE6-dz-iqk" firstAttribute="leading" secondItem="nbZ-m5-0jW" secondAttribute="trailing" constant="16" id="ng6-Ze-PLP"/>
+                            <constraint firstItem="nbZ-m5-0jW" firstAttribute="top" secondItem="Qqn-n0-JPf" secondAttribute="top" constant="10" id="ruW-9d-1jh"/>
+                            <constraint firstItem="hE6-dz-iqk" firstAttribute="centerY" secondItem="nbZ-m5-0jW" secondAttribute="centerY" id="sGf-Y2-0Yd"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qqn-n0-JPf" secondAttribute="trailing" constant="16" id="6dE-PC-Z0w"/>
+                    <constraint firstItem="Qqn-n0-JPf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lQ2-H9-gEG"/>
+                    <constraint firstItem="Qqn-n0-JPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tra-SH-Esv"/>
+                    <constraint firstAttribute="bottom" secondItem="Qqn-n0-JPf" secondAttribute="bottom" constant="8" id="wyj-7E-zxt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bg_view" destination="Qqn-n0-JPf" id="E5B-QF-0bz"/>
+                <outlet property="iv_edit" destination="nzO-1f-kJe" id="mdO-1i-2es"/>
+                <outlet property="iv_user" destination="nbZ-m5-0jW" id="YsZ-ty-4cu"/>
+                <outlet property="iv_visibility" destination="7m6-st-Ba8" id="Jsn-0S-Um2"/>
+                <outlet property="label_profession_type" destination="hE6-dz-iqk" id="BqD-s2-4n3"/>
+            </connections>
+            <point key="canvasLocation" x="248.80000000000001" y="136.73163418290855"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bt_3" width="24" height="24"/>
+        <image name="ic_edit" width="24" height="24"/>
+        <image name="ic_visibility" width="24" height="24"/>
+    </resources>
+</document>

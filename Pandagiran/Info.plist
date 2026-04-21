@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Pandagiran</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb949717895131517</string>
+				<string>com.jbs.hk.c.i</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.828691823842-dphi4i24hhfrfmrtmvi3m433e7d5281e</string>
+				<string>com.jbs.hk.c.i</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>949717895131517</string>
+	<key>FacebookDisplayName</key>
+	<string>Hysab Kytab</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>uber</string>
+		<string>uberauth</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Hysab Kytab needs access to camera to capture a transaction image.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Hysab Kytab needs access for contacts to invite your friends and family</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Hysab Kytab needs access for Face ID feature to authenticate the user</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Allow location services to get the list of nearest places and geofence them</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Allow location services to get the list of nearest places</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Allow location services to get the list of nearest places</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Hysab Kytab needs access to photo library to select a transaction image.</string>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.com.jbs.hk.c.i</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+			<true/>
+			<key>NSUbiquitousContainerName</key>
+			<string>Hysab Kytab</string>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>One</string>
+		</dict>
+	</dict>
+	<key>Privacy - Photo Library Usage Description
+
+Privacy - Photo Library Usage Description
+</key>
+	<string>Hysab Kytab needs access to photo library to attach a transaction image.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Lato-Regular.ttf</string>
+		<string>Montserrat.ttf</string>
+		<string>Lato-Bold.ttf</string>
+	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutItemIconTypeAdd</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>This is to add transaction</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Add Transaction</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).first</string>
+		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UberCallbackURIs</key>
+	<array>
+		<dict>
+			<key>URIString</key>
+			<string>com.jbs.hk.c.i://oauth/consumer</string>
+			<key>UberCallbackURIType</key>
+			<string>General</string>
+		</dict>
+	</array>
+	<key>UberClientID</key>
+	<string>lGEoGM0zx9TR_pd4eXpeDJcIizxMAJYK</string>
+	<key>UberDisplayName</key>
+	<string>Hysab Kytab</string>
+</dict>
+</plist>

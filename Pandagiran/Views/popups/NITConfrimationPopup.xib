@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NITConfrimationPopup" customModule="Pandagiran" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rK-jE-Mwr" customClass="CardView" customModule="Pandagiran" customModuleProvider="target">
+                    <rect key="frame" x="30" y="262" width="330" height="320"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Information" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-h3-bdw">
+                            <rect key="frame" x="115" y="12" width="100" height="100"/>
+                            <color key="tintColor" red="0.1058823529" green="0.63137254899999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="8v2-zc-oco"/>
+                                <constraint firstAttribute="height" constant="100" id="kbu-7n-hTC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jJ-qK-qfu">
+                            <rect key="frame" x="20" y="120" width="290" height="76.666666666666686"/>
+                            <string key="text">In order to avail the investment services, you agree to give permission to Pandagiran and it(s) partners to contact you to avail investments</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBr-v0-mAO" customClass="GradientButton" customModule="Pandagiran" customModuleProvider="target">
+                            <rect key="frame" x="41.333333333333329" y="220.66666666666669" width="247.33333333333337" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eMr-r2-B46"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="AGREE">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="agreeBtn:" destination="-1" eventType="touchUpInside" id="Xcc-rp-dly"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQz-pI-r4X" customClass="GradientButton" customModule="Pandagiran" customModuleProvider="target">
+                            <rect key="frame" x="41.333333333333329" y="268.66666666666663" width="247.33333333333337" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="KFp-Pj-PGm"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="CANCEL">
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                    <color key="value" red="0.1058823529" green="0.63137254899999995" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderVisible" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelBtn:" destination="-1" eventType="touchUpInside" id="1WO-Uo-dRa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xs1-9J-KUJ">
+                            <rect key="frame" x="298" y="8" width="24" height="24"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_clear">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                    <color key="value" systemColor="labelColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="dismissBtn:" destination="-1" eventType="touchUpInside" id="qq5-S4-UNc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Xs1-9J-KUJ" firstAttribute="top" secondItem="6rK-jE-Mwr" secondAttribute="top" constant="8" id="9iJ-eO-d9M"/>
+                        <constraint firstItem="aBr-v0-mAO" firstAttribute="centerX" secondItem="0jJ-qK-qfu" secondAttribute="centerX" id="H4M-52-uVY"/>
+                        <constraint firstAttribute="trailing" secondItem="Xs1-9J-KUJ" secondAttribute="trailing" constant="8" id="Lgj-Kr-5MO"/>
+                        <constraint firstItem="JGg-h3-bdw" firstAttribute="top" secondItem="6rK-jE-Mwr" secondAttribute="top" constant="12" id="O9B-lf-6IC"/>
+                        <constraint firstItem="XQz-pI-r4X" firstAttribute="centerX" secondItem="aBr-v0-mAO" secondAttribute="centerX" id="OKb-Fu-7uP"/>
+                        <constraint firstItem="aBr-v0-mAO" firstAttribute="top" secondItem="0jJ-qK-qfu" secondAttribute="bottom" constant="24" id="RZn-fK-vsw"/>
+                        <constraint firstItem="XQz-pI-r4X" firstAttribute="width" secondItem="6rK-jE-Mwr" secondAttribute="width" multiplier="0.75" id="YGF-27-Uic"/>
+                        <constraint firstItem="XQz-pI-r4X" firstAttribute="top" secondItem="aBr-v0-mAO" secondAttribute="bottom" constant="8" id="ZOp-8M-WpC"/>
+                        <constraint firstItem="0jJ-qK-qfu" firstAttribute="top" secondItem="JGg-h3-bdw" secondAttribute="bottom" constant="8" id="ax2-AX-9nA"/>
+                        <constraint firstAttribute="height" constant="320" id="bYz-ss-OCp"/>
+                        <constraint firstAttribute="width" constant="330" id="bjV-bZ-FDB"/>
+                        <constraint firstItem="JGg-h3-bdw" firstAttribute="centerX" secondItem="6rK-jE-Mwr" secondAttribute="centerX" id="eHw-D2-OTh"/>
+                        <constraint firstItem="0jJ-qK-qfu" firstAttribute="leading" secondItem="6rK-jE-Mwr" secondAttribute="leading" constant="20" id="ee8-9L-LjE"/>
+                        <constraint firstAttribute="trailing" secondItem="0jJ-qK-qfu" secondAttribute="trailing" constant="20" id="gMH-HH-i8A"/>
+                        <constraint firstItem="aBr-v0-mAO" firstAttribute="width" secondItem="6rK-jE-Mwr" secondAttribute="width" multiplier="0.75" id="rN0-cx-xlj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBorderVisible" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6rK-jE-Mwr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DFh-73-xAe"/>
+                <constraint firstItem="6rK-jE-Mwr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YlB-ZF-sXy"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Information" width="221" height="250"/>
+        <image name="ic_clear" width="24" height="24"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

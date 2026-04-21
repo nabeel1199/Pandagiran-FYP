@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlyerSimilarDealViewCell" id="gTV-IL-0wX" customClass="FlyerSimilarDealViewCell" customModule="Hysab_Kytab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="326"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="326"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRJ-sK-jvA" customClass="CardView" customModule="Hysab_Kytab" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="240" height="316"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dU0-cy-qd2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="5hy-b7-MQ9"/>
+                                    <constraint firstAttribute="width" constant="240" id="zsC-Nk-dr2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" horizontalCompressionResistancePriority="749" text="Nestle Fruita Vital All Flavours" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiR-Na-fxk">
+                                <rect key="frame" x="8" y="148" width="160.5" height="34"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="400 Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15R-2M-BFH">
+                                <rect key="frame" x="176.5" y="158" width="55.5" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QJX-jy-3xD" customClass="CircularView" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="8" y="187" width="35" height="35"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_2" translatesAutoresizingMaskIntoConstraints="NO" id="oid-Vl-3O4">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="DQb-MH-8KE"/>
+                                            <constraint firstAttribute="height" constant="35" id="ucl-Az-hsd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="oid-Vl-3O4" firstAttribute="leading" secondItem="QJX-jy-3xD" secondAttribute="leading" id="0c6-Pp-dJT"/>
+                                    <constraint firstAttribute="width" constant="35" id="V8o-Ja-YVK"/>
+                                    <constraint firstAttribute="trailing" secondItem="oid-Vl-3O4" secondAttribute="trailing" id="b0g-gQ-1Eb"/>
+                                    <constraint firstAttribute="bottom" secondItem="oid-Vl-3O4" secondAttribute="bottom" id="hsJ-Jc-BZt"/>
+                                    <constraint firstAttribute="height" constant="35" id="kqj-q2-0iQ"/>
+                                    <constraint firstItem="oid-Vl-3O4" firstAttribute="top" secondItem="QJX-jy-3xD" secondAttribute="top" id="oGw-19-VSJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARREFOUR AND DIFFERENT FLYERS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0g-GY-Fpc">
+                                <rect key="frame" x="51" y="187.5" width="181" height="34"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs 569" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwo-5e-2FO">
+                                <rect key="frame" x="8" y="227" width="43" height="36"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.8980392157" green="0.1671285656" blue="0.21570791340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Rs 800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpp-nz-70S">
+                                <rect key="frame" x="67" y="238" width="37" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOF-o2-UYi" customClass="CircularButton" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="16" y="271" width="35" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="gtw-p1-Sd9"/>
+                                    <constraint firstAttribute="height" constant="35" id="vJZ-oo-z45"/>
+                                </constraints>
+                                <color key="tintColor" red="0.20000000000000001" green="0.60784313729999995" blue="0.61176470589999998" alpha="0.60281999139999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_wishlist"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEr-Yf-1PN" customClass="CircularButton" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="67" y="271" width="35" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="SLP-9w-f3x"/>
+                                    <constraint firstAttribute="width" constant="35" id="ScE-TE-nvD"/>
+                                </constraints>
+                                <color key="tintColor" red="0.20000000000000001" green="0.60784313729999995" blue="0.61176470589999998" alpha="0.60281999139999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_reminder"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dus-fP-Gzt" customClass="CircularButton" customModule="Hysab_Kytab" customModuleProvider="target">
+                                <rect key="frame" x="118" y="271" width="35" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Z69-hi-EdA"/>
+                                    <constraint firstAttribute="width" constant="35" id="evf-lz-MWV"/>
+                                </constraints>
+                                <color key="tintColor" red="0.20000000000000001" green="0.60784313729999995" blue="0.61176470589999998" alpha="0.60281999139999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="ic_share"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APq-Ga-1hS">
+                                <rect key="frame" x="0.0" y="314" width="240" height="10"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="pQw-Bg-bPk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="oOF-o2-UYi" secondAttribute="bottom" constant="10" id="9Gw-di-VQ9"/>
+                            <constraint firstAttribute="trailing" secondItem="dU0-cy-qd2" secondAttribute="trailing" id="CUo-3S-ExF"/>
+                            <constraint firstItem="dU0-cy-qd2" firstAttribute="leading" secondItem="HRJ-sK-jvA" secondAttribute="leading" id="CZe-HB-sbq"/>
+                            <constraint firstAttribute="trailing" secondItem="o0g-GY-Fpc" secondAttribute="trailing" constant="8" id="CvL-04-L7e"/>
+                            <constraint firstItem="pwo-5e-2FO" firstAttribute="leading" secondItem="HRJ-sK-jvA" secondAttribute="leading" constant="8" id="Eqa-qf-7Kp"/>
+                            <constraint firstItem="aiR-Na-fxk" firstAttribute="top" secondItem="dU0-cy-qd2" secondAttribute="bottom" constant="8" id="Gkq-C2-RoU"/>
+                            <constraint firstItem="aiR-Na-fxk" firstAttribute="leading" secondItem="HRJ-sK-jvA" secondAttribute="leading" constant="8" id="JP4-8h-rmt"/>
+                            <constraint firstItem="pwo-5e-2FO" firstAttribute="top" secondItem="QJX-jy-3xD" secondAttribute="bottom" constant="5" id="JVp-Hy-41X"/>
+                            <constraint firstItem="oOF-o2-UYi" firstAttribute="leading" secondItem="HRJ-sK-jvA" secondAttribute="leading" constant="16" id="JjT-lX-CMd"/>
+                            <constraint firstItem="dus-fP-Gzt" firstAttribute="centerY" secondItem="gEr-Yf-1PN" secondAttribute="centerY" id="Jns-1K-Q9f"/>
+                            <constraint firstItem="15R-2M-BFH" firstAttribute="centerY" secondItem="aiR-Na-fxk" secondAttribute="centerY" id="Jp7-P5-62Y"/>
+                            <constraint firstItem="o0g-GY-Fpc" firstAttribute="centerY" secondItem="oid-Vl-3O4" secondAttribute="centerY" id="NGG-lI-6lF"/>
+                            <constraint firstItem="oOF-o2-UYi" firstAttribute="top" secondItem="pwo-5e-2FO" secondAttribute="bottom" constant="8" id="QP4-wE-4C7"/>
+                            <constraint firstAttribute="trailing" secondItem="15R-2M-BFH" secondAttribute="trailing" constant="8" id="RJQ-0w-cy3"/>
+                            <constraint firstItem="dpp-nz-70S" firstAttribute="centerY" secondItem="pwo-5e-2FO" secondAttribute="centerY" id="S8A-AT-1YE"/>
+                            <constraint firstItem="15R-2M-BFH" firstAttribute="leading" secondItem="aiR-Na-fxk" secondAttribute="trailing" constant="8" id="V7B-gJ-1CU"/>
+                            <constraint firstAttribute="bottom" secondItem="APq-Ga-1hS" secondAttribute="bottom" constant="-8" id="VO0-jT-6vk"/>
+                            <constraint firstItem="QJX-jy-3xD" firstAttribute="top" secondItem="aiR-Na-fxk" secondAttribute="bottom" constant="5" id="czS-gI-Ask"/>
+                            <constraint firstItem="APq-Ga-1hS" firstAttribute="leading" secondItem="HRJ-sK-jvA" secondAttribute="leading" id="hes-WU-9eP"/>
+                            <constraint firstItem="dpp-nz-70S" firstAttribute="leading" secondItem="pwo-5e-2FO" secondAttribute="trailing" constant="16" id="ntb-o3-z2X"/>
+                            <constraint firstAttribute="trailing" secondItem="APq-Ga-1hS" secondAttribute="trailing" id="orR-4l-Qf5"/>
+                            <constraint firstItem="QJX-jy-3xD" firstAttribute="leading" secondItem="HRJ-sK-jvA" secondAttribute="leading" constant="8" id="pJY-kN-8hM"/>
+                            <constraint firstItem="gEr-Yf-1PN" firstAttribute="centerY" secondItem="oOF-o2-UYi" secondAttribute="centerY" id="pZb-qg-mm5"/>
+                            <constraint firstItem="o0g-GY-Fpc" firstAttribute="leading" secondItem="QJX-jy-3xD" secondAttribute="trailing" constant="8" id="rFP-sp-fPY"/>
+                            <constraint firstItem="dus-fP-Gzt" firstAttribute="leading" secondItem="gEr-Yf-1PN" secondAttribute="trailing" constant="16" id="sQm-Jg-qB6"/>
+                            <constraint firstItem="dU0-cy-qd2" firstAttribute="top" secondItem="HRJ-sK-jvA" secondAttribute="top" id="sx8-XB-psu"/>
+                            <constraint firstItem="gEr-Yf-1PN" firstAttribute="leading" secondItem="oOF-o2-UYi" secondAttribute="trailing" constant="16" id="z0z-5Y-d5F"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HRJ-sK-jvA" secondAttribute="trailing" constant="5" id="0tW-dl-20q"/>
+                <constraint firstAttribute="bottom" secondItem="HRJ-sK-jvA" secondAttribute="bottom" constant="5" id="G0g-OW-qpC"/>
+                <constraint firstItem="HRJ-sK-jvA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="VzF-sn-ELE"/>
+                <constraint firstItem="HRJ-sK-jvA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Zsl-sf-q1y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="250" height="326"/>
+            <connections>
+                <outlet property="btn_add_wishlist" destination="oOF-o2-UYi" id="tX4-kB-XAR"/>
+                <outlet property="btn_reminder" destination="gEr-Yf-1PN" id="3jN-i2-K9n"/>
+                <outlet property="btn_share" destination="dus-fP-Gzt" id="GTS-QI-txB"/>
+                <outlet property="iv_deal" destination="dU0-cy-qd2" id="1QG-92-hXk"/>
+                <outlet property="iv_retailer" destination="oid-Vl-3O4" id="US5-zd-rlW"/>
+                <outlet property="label_deal_title" destination="aiR-Na-fxk" id="W6O-I9-Uyk"/>
+                <outlet property="label_discounted_price" destination="pwo-5e-2FO" id="ej6-54-vO3"/>
+                <outlet property="label_original_price" destination="dpp-nz-70S" id="PDS-8g-1Ra"/>
+                <outlet property="label_retailer_title" destination="o0g-GY-Fpc" id="Qja-W9-S5G"/>
+                <outlet property="label_views_count" destination="15R-2M-BFH" id="DKm-oD-8Kx"/>
+                <outlet property="view_extended" destination="APq-Ga-1hS" id="VOH-V2-Hs3"/>
+            </connections>
+            <point key="canvasLocation" x="209.59999999999999" y="248.27586206896552"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bt_2" width="24" height="24"/>
+        <image name="ic_reminder" width="20" height="21.5"/>
+        <image name="ic_share" width="18.5" height="17"/>
+        <image name="ic_wishlist" width="24" height="24"/>
+    </resources>
+</document>
